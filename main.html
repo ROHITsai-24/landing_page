@@ -7,40 +7,44 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f9f9f9;
         }
+        .section {
+            padding: 60px 0;
+        }
 
 /* tab section */
 
-.tabbed-input-section {
-    position: relative;
+        .tabbed-input-section {
+            position: relative;
     background: #FFFFFF;
-    border-radius: 1.5rem;
-    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
-    padding: 2.5rem;
+    border-radius: 24px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
     margin: 0 auto;
     max-width: 1200px;
-    margin: -9.375rem auto 0;
+    margin: -150px auto 0; 
     z-index: 10;
 }
 
 .tab-nav {
     display: flex;
     background: #F9F9F9;
-    border-radius: 3.75rem;
-    padding: 0.625rem;
+    border-radius: 60px;
+    padding: 10px;
     justify-content: flex-start;
-    gap: 0.625rem;
+    gap: 10px;
 }
 
 .tab {
     background: white;
-    border-radius: 3.75rem;
-    padding: 0.625rem 1.25rem;
+    border-radius: 60px;
+    padding: 10px 20px;
     border: none;
     cursor: pointer;
 }
@@ -49,11 +53,11 @@
     background: #E4E4E4;
 }
 
-.input-group {
+.input-tab {
     display: flex;
-    gap: 0.9375rem;
-    margin-top: 1.25rem;
-    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    align-items: center; 
     flex-wrap: wrap;
 }
 
@@ -70,51 +74,48 @@
 }
 
 .input-icon {
-    padding-left: 2.1875rem;
+    padding-left: 35px;
 }
 
 .input-wrapper input {
     width: 100%;
-    padding: 0.625rem;
+    padding: 10px;
     border: 1px solid #E4E4E4;
-    border-radius: 0.5rem;
-    font-size: 0.875rem;
+    border-radius: 8px;
+    font-size: 14px;
 }
 
 .unit {
     position: absolute;
-    right: 0.625rem;
+    right: 10px;
     top: 67%;
     transform: translateY(-50%);
     color: #666;
 }
 
-.u-kg {
-    top: 50%;
+.u-kg{
+    top:50%
 }
-
 .hidden-label {
-    visibility: hidden;
+    visibility: hidden; 
 }
 
 .search-btn {
     background: #f57600;
     color: white;
-    padding: 0.625rem 1.25rem;
-    border-radius: 0.5rem;
+    padding: 10px 20px;
+    border-radius: 8px;
     border: none;
     cursor: pointer;
-    height: 2.5rem;
+    height: 40px; 
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 7.5rem;
+    min-width: 120px;
 }
-
-.bttn {
-    max-width: 5rem;
+.bttn{
+    max-width: 80px;
 }
-
 .input-icon-container {
     position: relative;
     display: flex;
@@ -123,7 +124,7 @@
 
 .icon {
     position: absolute;
-    left: 0.625rem;
+    left: 10px;
     top: 50%;
     transform: translateY(-50%);
     display: flex;
@@ -132,18 +133,21 @@
 
 .input-icon-container input {
     width: 100%;
-    padding: 0.625rem 0.625rem 0.625rem 2.1875rem;
+    padding: 10px 10px 10px 35px;
     border: 1px solid #E4E4E4;
-    border-radius: 0.5rem;
-    font-size: 0.875rem;
+    border-radius: 8px;
+    font-size: 14px;
     outline: none;
     transition: border-color 0.3s;
-    min-width: 11.25rem;
+    min-width: 180px; 
 }
+
 
 .input-icon-container input:focus {
     border-color: #86b7fe;
 }
+
+
 
 /* hero section */
 
@@ -151,20 +155,19 @@
     position: absolute;
     top: 0;
     width: 100%;
-    background: #575757;
-    padding: 1.25rem 0;
+    background: #575757; 
+    padding: 20px 0;
     z-index: 100;
 }
-
 .navbar .n-hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 0.625rem;
+    padding: 0 10px;
 }
 
 .logo {
-    font-size: 1.25rem;
+    font-size: 20px;
     font-weight: bold;
     color: white;
 }
@@ -172,36 +175,44 @@
 .nav-links a {
     color: white;
     text-decoration: none;
-    margin-left: 1.25rem;
-    font-size: 0.875rem;
+    margin-left: 20px;
+    font-size: 14px;
 }
 
 .hero-section {
     background: #575757;
     position: relative;
-    padding: 11.25rem 3.125rem 15.625rem;
+    padding: 180px 50px 250px;
 }
 
 .hero-heading {
     font-family: 'Anton', sans-serif;
-    font-size: 6.25rem;
-    font-weight: bold;
-    color: white;
+    font-size: 100px;
     line-height: 1.2;
     text-align: left;
-    max-width: 50rem;
-    letter-spacing: 0.3125rem;
+    max-width: 800px;
+    letter-spacing: 5px;
+    color: white;
 }
 
-.hero-section::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 12.5rem;
-    background: linear-gradient(to top, #af7c4d, #575757);
+.outline-effect {
+    background: linear-gradient(to top, #575757 37%, white 37%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px white;
 }
+
+.square-cut {
+    position: relative;
+    display: inline-block;
+    -webkit-text-stroke: 2px white;
+    background: linear-gradient(145deg, white 46%, #575757 40%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
 /* logistic */
 .logistic-partner .logistic {
     max-width: 1200px; 
@@ -209,9 +220,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3.125rem;
+    gap: 50px; 
     margin-bottom: 0; 
 }
+
 
 .logistic-grey-box {
     width: 400px; 
@@ -220,8 +232,9 @@
     border-radius: 10px;
 }
 
+
 .l-grey-box-column, .l-content-column {
-    padding: 6.25rem 6.25rem 3.125rem 6.25rem;
+    padding: 100px 100px 50px 100px;
 }
 
 .logistic-text {
@@ -233,35 +246,41 @@
 
 .l-content-column {
     position: relative; 
-    margin-top: 16.25rem;
+    margin-top: 260px;
     max-width: 575px;
 }
 
 .logistic-heading {
     font-family: 'Anton', sans-serif;
-    font-size: 3.75rem;
+    font-size: 60px;
     font-weight: bold;
     line-height: 1.2;
     text-align: left;
-    margin-bottom: 1.5625rem;
+    margin-bottom: 25px;
     
     position: absolute;
-    bottom: 15.625rem;
-    left: -7.5rem;
+    bottom: 250px;
+    left: -120px; 
     z-index: 2;
     width: 100%; 
 }
+.logistic-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
 
-/* tailored section */
+/* tailoured section */
 .tailored-section {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 3.75rem 6.25rem;
-    padding-bottom: 6.25rem;
+    padding: 60px 100px;
+    padding-bottom: 100px;
     display: flex;
     justify-content: center; 
     align-items: flex-start; 
-    gap: 11.25rem;
+gap: 180px;
 }
 
 .left-section {
@@ -274,7 +293,7 @@
 
 .tailored-heading {
     font-family: 'Anton', sans-serif;
-    font-size: 3.75rem;
+    font-size: 60px;
     line-height: 1.1;
     text-align: left;
     max-width: 100%;
@@ -282,11 +301,10 @@
 }
 
 .t-grey-box {
-    width: 250px;
+    width: 450px;
     height: 300px;
-    background-color: #D3D3D3;
     border-radius: 8px;
-    margin-top: 9.375rem;
+    margin-top: 150px; 
     padding: 0px;
     display: inline-block;
 }
@@ -296,19 +314,19 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin-top: 8.125rem;
+    margin-top: 130px;
 }
 
 .service-item {
     display: flex;
     align-items: flex-start;
-    gap: 6.25rem;
-    margin-bottom: 1.25rem;
+    gap: 100px;
+    margin-bottom: 20px;
 }
 
 .number {
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 16px;
     min-width: 40px; 
 }
 
@@ -318,14 +336,14 @@
 
 .service-title {
     font-weight: bold;
-    font-size: 1.125rem;
-    margin-bottom: 0.3125rem;
+    font-size: 18px;
+    margin-bottom: 5px;
 }
 
 .service-text {
-    font-size: 0.875rem;
+    font-size: 14px;
     color: #696E76;
-    margin-bottom: 0.625rem;
+    margin-bottom: 10px;
 }
 
 hr {
@@ -333,15 +351,23 @@ hr {
     border-color: #C0C0C0;
     height: 1px;
     background-color: #DCDCDC;
-    margin: 0 0 1.25rem 0;
+    margin: 0 0 20px 0;
+}
+
+.tailored-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
 }
 
 
 /* real-time */
+
 .real-time-tracking {
     background-color: #2B4552;
-    border-radius: 1.5rem;
-    padding: 3.125rem 0.9375rem 0.9375rem;
+    border-radius: 24px;
+    padding: 50px 15px 15px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -349,7 +375,7 @@ hr {
 .real {
     display: flex;
     flex-direction: column;
-    gap: 1.875rem;
+    gap: 30px;
 }
 
 .tracking-header {
@@ -360,34 +386,53 @@ hr {
 
 .tracking-title {
     font-family: 'Anton', sans-serif;
-    font-size: 3rem;
+    font-size: 48px;
     color: white;
     line-height: 1.2;
 }
 
 .tracking-content {
     color: white;
-    font-size: 1rem;
-    max-width: 15.625rem;
+    font-size: 16px;
+    max-width: 250px;
     text-align: left;
 }
 
 .tracking-box {
     background-color: #D3D3D3;
-    border-radius: 0.75rem;
+    border-radius: 12px;
     width: 100%;
-    height: 37.5rem;
+    height: 600px;
     position: relative;
-    padding: 1.25rem 0 0 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+
+.tracking-map {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    border: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
 
 .tracking-image {
     position: absolute;
-    bottom: 1.25rem;
-    left: 1.25rem;
-    border-radius: 0.5rem;
-    width: 21.875rem;
+    bottom: 20px;
+    left: 20px;
+    border-radius: 8px;
+    width: 350px;
+    z-index: 2;
 }
+
+
 
 /* eco-logistics */
 .eco-partner .eco {
@@ -396,32 +441,35 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3.125rem; 
+    gap: 50px; 
     margin-bottom: 0; 
 }
 
+
 .e-grey-box {
-    width: 25rem; 
-    height: 34.375rem; 
+    width: 400px; 
+    height: 550px; 
     background-color: #D3D3D3;
-    border-radius: 0.625rem;
+    border-radius: 10px;
 }
+
 
 .e-grey-box-column, .e-content-column {
-    padding: 6.25rem 6.25rem 3.125rem 6.25rem;
+    padding: 100px 100px 50px 100px;
 }
 
+
 .e-content-column {
-    max-width: 35.9375rem;
+    max-width: 575px; 
 }
 
 .eco-heading {
     font-family: 'Anton', sans-serif;
-    font-size: 3.75rem;
+    font-size: 60px; 
     font-weight: bold;
     line-height: 1.2;
     text-align: left;
-    margin-bottom: 1.5625rem;
+    margin-bottom: 25px; 
 }
 
 .eco-text {
@@ -430,32 +478,38 @@ hr {
     line-height: 1.5;
     text-align: left;
 }
+.eco-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
 
 /* smart logistics */
 .smart-logistics {
     text-align: center;
-    padding: 3.75rem 1.25rem;
+    padding: 60px 20px;
 }
 
 .smart-heading {
     font-family: 'Anton', sans-serif;
-    font-size: 3.75rem;
-    margin-bottom: 3.75rem;
+    font-size: 60px;
+    margin-bottom: 60px;
 }
 
 .cards-container {
     display: flex;
     justify-content: center;
-    gap: 1.25rem;
+    gap: 20px;
 }
 
 .card {
-    width: 16.875rem;
-    height: 21.875rem;
+    width: 270px;
+    height: 350px;
     background-color: #FFFFFF;
-    border-radius: 1rem;
+    border-radius: 16px;
     border: 1px solid #DCDCDC;
-    padding: 1.25rem;
+    padding: 20px;
     text-align: left;
     position: relative;
     display: flex;
@@ -464,8 +518,8 @@ hr {
 }
 
 .icon-circle {
-    width: 3.75rem;
-    height: 3.75rem;
+    width: 60px;
+    height: 60px;
     background-color: #FFFFFF; 
     border: 2px solid #DCDCDC; 
     border-radius: 50%;
@@ -473,37 +527,42 @@ hr {
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 1.25rem;
-    left: 1.25rem;
+    top: 20px;
+    left: 20px;
 }
 
 .icon-circle img {
-    width: 1.875rem;
-    height: 1.875rem;
+    width: 30px;
+    height: 30px;
 }
+
 
 .card-title {
-    font-size: 1.125rem;
+    font-size: 18px;
     font-weight: bold;
-    margin-bottom: 0.3125rem;
+    margin-bottom: 5px;
 }
 
+
 .card-content {
-    font-size: 0.875rem;
+    font-size: 14px;
     color: #696E76;
 }
 
 
-/* Another Section */
-.trusted-partner .container {
+
+/* another section */
+
+.trusted-partner .trust {
     max-width: 1200px; 
     margin: 0 auto; 
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3.125rem; 
+    gap: 50px; 
     margin-bottom: 0; 
 }
+
 
 .trust-grey-box {
     width: 400px; 
@@ -512,22 +571,25 @@ hr {
     border-radius: 10px;
 }
 
-.grey-box-column, .content-column {
-    padding: 6.25rem 6.25rem 3.125rem 6.25rem; 
+
+.t-grey-box-column, .t-content-column {
+    padding: 100px 100px 50px 100px;
 }
 
-.content-column {
+
+.t-content-column {
     max-width: 575px; 
 }
 
 .trusted-heading {
     font-family: 'Anton', sans-serif;
-    font-size: 3.75rem; 
+    font-size: 60px; 
     font-weight: bold;
     line-height: 1.2;
     text-align: left;
-    margin-bottom: 1.5625rem; 
+    margin-bottom: 25px; 
 }
+
 
 .trusted-text {
     color: #696E76;
@@ -535,27 +597,34 @@ hr {
     line-height: 1.5;
     text-align: left;
 }
-
-/* Faq Section */
-.faq-section {
-    background-color: #f8f9fa;
-    padding: 3.75rem 1.25rem; 
-    text-align: center;
+.trusted-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
 }
 
+
+
+/* faq section */
+.faq-section {
+    background-color: #f8f9fa;
+    padding: 60px 20px;
+    text-align: center;
+}
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 .faq-heading {
     font-family: 'Anton', sans-serif;
-    font-size: 3.75rem; 
+    font-size: 60px;
     color: #222;
-    margin-bottom: 2.5rem;
+    margin-bottom: 40px;
 }
 
 .faq-box {
     background-color: white;
-    padding: 1.25rem; 
-    margin-bottom: 0.9375rem;
+    padding: 20px;
+    margin-bottom: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     max-width: 700px;
@@ -566,20 +635,20 @@ hr {
 .faq-question {
     display: flex;
     justify-content: space-between;
-    font-size: 1.125rem;
+    font-size: 18px;
     font-weight: bolder;
     cursor: pointer;
 }
 
 .toggle-icon {
-    font-size: 1.25rem; 
+    font-size: 20px;
     font-weight: bold;
 }
 
 .faq-answer {
-    font-size: 1rem; 
+    font-size: 16px;
     color: #696E76;
-    margin-top: 0.625rem; 
+    margin-top: 10px;
     text-align: left;
     display: none;
 }
@@ -588,404 +657,413 @@ hr {
 }
 
 
-/* Footer */
-.footer {
+
+        /* footer */
+        .footer {
     background-color: #203544;
     border-radius: 15px;
     color: #C6C8CB;
-    padding: 3.125rem 1.875rem 1.5625rem 1.875rem; 
+    padding: 50px 30px 25px 30px;
     max-width: 1300px; 
-    margin: 0 auto 1.25rem auto; 
+    margin: 0 auto 20px auto; 
 }
 
-.container {
-    padding: 1.25rem 1.25rem; 
+.foot {
+    padding: 20px 20px; 
 }
 
-.text-muted {
-    color: #9EA4AD !important;
+.c-text-muted {
+    color: #9EA4AD;
 }
 
 .email-input {
     background: transparent;
     border: 1px solid #5A636F;
-    color: #9EA4AD;
-    padding: 0.625rem; 
+    color: #9EA4AD !;
+    padding: 10px;
 }
 
-.input-group-text {
+.i-g-t {
     border: 1px solid #5A636F;
-    padding: 0.625rem; 
+    padding: 10px;
 }
 
 .arrow-icon {
     width: 20px;
     height: 20px;
+
 }
 
-.c-border-bottom {
-    padding-bottom: 3.125rem; 
-    border-bottom: 1px solid #5A636F;
+.c-border-bottom{
+    padding-bottom: 50px;
+    border-bottom: 1px solid #5A636F 
 }
 
-.p1 {
-    padding-top: 3.125rem; 
+
+.p1{
+    padding-top: 50px;
 }
 
 .footer ul.list-unstyled li {
-    padding-bottom: 0.5rem; 
+    padding-bottom: 8px;
 }
 
 .footer .col-lg-3:nth-child(2) {
     position: relative;
     left: 80px; 
 }
-
-.tw {
+.tw{
     font-weight: 700;
 }
-
 .email-input::placeholder {
-    color: #9EA4AD;
+    color: #9EA4AD 
 }
-
 .social-icon {
     width: 40px; 
     height: 40px;
 }
-
-.p4 {
-    padding-top: 1.875rem; 
+.p4{
+    padding-top: 30px;
 }
+
 
 .social-icon {
     width: 150px; 
     height: 40px;
 }
-
 .learn-more {
     text-decoration: underline;
     text-decoration-thickness: 1px; 
-    text-underline-offset: 0.75rem; 
-    color: white;
+    text-underline-offset: 12px; 
+    color: white; 
 }
+.i_class{
+    font-size: 20px;
+}
+
   </style>
 </head>
 <body>
     
-
-   <!-- 1. Hero Section -->
-   <header class="navbar">
-    <div class="container n-hero">
-        <div class="logo">
-            <img src="boat-outline.svg" alt="CargoLog Logo">
-            CargoLog
-        </div>
-        <nav class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">Services</a>
-            <a href="#">Company</a>
-            <a href="#">Features</a>
-            <a href="#">News</a>
-            <a href="#">Contact</a>
-        </nav>
-    </div>
-</header>
-
-<section class="hero-section">
-    <div class="container n-hero">
-        <h1 class="hero-heading">
-            Efficient logistics<br>
-            solutions tailored<br>
-            to your needs
-        </h1>
-    </div>
-</section>
-
-
-
-<section class="tabbed-input-section">
-    <div class="container c-tab">
-        <nav class="tab-nav">
-            <button class="tab active" onclick="switchTab(event, 'shipping-rate')">Shipping rate</button>
-            <button class="tab" onclick="switchTab(event, 'tracking')">Tracking</button>
-            <button class="tab" onclick="switchTab(event, 'drop-point')">Drop point</button>
-        </nav>
-
-
-        <div class="tab-content" id="shipping-rate">
-            <div class="input-group">
-                <div class="input-wrapper">
-                    <label>From</label>
-                    <div class="input-icon-container">
-                        <span class="icon">
-                            <img src="location.svg" alt="">
-                        </span>
-                        <input type="text" placeholder="Choose location" class="location-icon">
-                    </div>
-                </div>
-                <div class="input-wrapper">
-                    <label>To</label>
-                    <div class="input-icon-container">
-                        <span class="icon">
-                            <img src="location.svg" alt="">
-                        </span>
-                        <input type="text" placeholder="Choose location" class="location-icon">
-                    </div>
-                </div>  
+    <header class="navbar">
+        <div class="container n-hero">
+            <div class="logo">
+                <img src="boat-outline.svg" alt="CargoLog Logo">
+                CargoLog
             </div>
-
-            <div class="input-group">
-                <div class="input-wrapper weight">
-                    <label>Weight</label>
-                    <div class="input-icon-container">
-                        <span class="icon">
-                            <img src="package.svg" alt="">
-                        </span>
-                        <input type="text" placeholder="Enter weight" class="weight-icon">
-                        <span class="unit u-kg">Kg</span>
-                    </div>
-                </div>
-                <div class="input-wrapper">
-                    <label>Volume</label>
-                    <input type="text" placeholder="Length">
-                    <span class="unit">Cm</span>
-                </div>
-                <div class="input-wrapper">
-                    <label class="hidden-label">Volume</label> 
-                    <input type="text" placeholder="Width">
-                    <span class="unit">Cm</span>
-                </div>
-                <div class="input-wrapper">
-                    <label class="hidden-label">Volume</label> 
-                    <input type="text" placeholder="Height">
-                    <span class="unit">Cm</span>
-                </div>
-                <div class="input-wrapper bttn">
-                    <label class="hidden-label">Button</label> 
-                    <button class="search-btn">Search</button>
-                </div>
-            </div>
+            <nav class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Services</a>
+                <a href="#">Company</a>
+                <a href="#">Features</a>
+                <a href="#">News</a>
+                <a href="#">Contact</a>
+            </nav>
         </div>
-
-
-        <div class="tab-content" id="tracking" style="display: none;">
-            
-            <div class="input-group">
-                <div class="input-wrapper">
-                    <label>From</label>
-                    <div class="input-icon-container">
-                        <span class="icon">
-                            <img src="location.svg" alt="">
-                        </span>
-                        <input type="text" placeholder="Choose location" class="location-icon">
-                    </div>
-                </div>
-            </div>
-
-            <div class="input-group">
-                <div class="input-wrapper weight">
-                    <label>Weight</label>
-                    <div class="input-icon-container">
-                        <span class="icon">
-                            <img src="package.svg" alt="">
-                        </span>
-                        <input type="text" placeholder="Enter weight" class="weight-icon">
-                        <span class="unit u-kg">Kg</span>
-                    </div>
-                </div>
-                <div class="input-wrapper">
-                    <label>Volume</label>
-                    <input type="text" placeholder="Length">
-                    <span class="unit">Cm</span>
-                </div>
-                <div class="input-wrapper">
-                    <label class="hidden-label">Volume</label> 
-                    <input type="text" placeholder="Width">
-                    <span class="unit">Cm</span>
-                </div>
-                <div class="input-wrapper">
-                    <label class="hidden-label">Volume</label> 
-                    <input type="text" placeholder="Height">
-                    <span class="unit">Cm</span>
-                </div>
-                <div class="input-wrapper bttn">
-                    <label class="hidden-label">Button</label> 
-                    <button class="search-btn">Search</button>
-                </div>
-            </div>
-        </div>
-
-        </div>
-
-
-        <div class="tab-content" id="drop-point" style="display: none;">
-            <div class="input-group">
-                <div class="input-wrapper">
-                    <label>From</label>
-                    <div class="input-icon-container">
-                        <span class="icon">
-                            <img src="location.svg" alt="">
-                        </span>
-                        <input type="text" placeholder="Choose location" class="location-icon">
-                    </div>
-                </div>
-                <div class="input-wrapper">
-                    <label>To</label>
-                    <div class="input-icon-container">
-                        <span class="icon">
-                            <img src="location.svg" alt="">
-                        </span>
-                        <input type="text" placeholder="Choose location" class="location-icon">
-                    </div>
-                </div>  
-            </div>
-
-            <div class="input-group">
-                <div class="input-wrapper weight">
-                    <label>Weight</label>
-                    <div class="input-icon-container">
-                        <span class="icon">
-                            <img src="package.svg" alt="">
-                        </span>
-                        <input type="text" placeholder="Enter weight" class="weight-icon">
-                        <span class="unit u-kg">Kg</span>
-                    </div>
-                </div>
-                <div class="input-wrapper">
-                    <label>Volume</label>
-                    <input type="text" placeholder="Length">
-                    <span class="unit">Cm</span>
-                </div>
-                <div class="input-wrapper bttn">
-                    <label class="hidden-label">Button</label> 
-                    <button class="search-btn">Search</button>
-                </div>
-            </div>
-        </div>
-
-        </div>
-    </div>
-</section>
-
-<script>
-function switchTab(event, tabId) {
-    document.querySelectorAll('.tab-content').forEach(tab => tab.style.display = 'none');
-    document.getElementById(tabId).style.display = 'block';
+    </header>
     
-    document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
-    event.currentTarget.classList.add('active');
-}
-</script>
-
-
-
-<!-- 3. Logistics That Move Business -->
-<section class="logistic-partner">
-    <div class="container logistic">
-        <div class="row align-items-center">
-            <div class="col-lg-6 l-grey-box-column">
-                <div class="logistic-grey-box"></div>
-            </div>
-            
-            <div class="col-lg-6 l-content-column">
-                <h2 class="logistic-heading">
-                    Logistics that<br>
-                    move your<br>
-                    business
-                </h2>
-                <p class="logistic-text">
-                    In the fast-paced world of global trade, timing<br>
-                    is everything. With our logistics expertise, we<br>
-                    don't just deliver goods — we deliver peace of<br>
-                    mind. From precise coordination to lightning-<br>
-                    fast execution, we are your go-to logistics<br>
-                    partner that makes sure your supply chain<br>
-                    never misses a beat.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- 4. Tailored Solutions -->
-<section class="tailored-section">
-    <div class="left-section">
-        <h2 class="tailored-heading">Tailored solutions<br>for your needs</h2>
-        <div class="t-grey-box"></div>
-    </div>
-    
-    <div class="right-section">
-        <div class="service-list">
-            <div class="service-item">
-                <span class="number">001</span>
-                <div class="service-content">
-                    <h3 class="service-title">Freight forwarding</h3>
-                    <p class="service-text">Fast and cost-effective transport.</p>
-                </div>
-            </div>
-            <hr>
-
-            <div class="service-item">
-                <span class="number">002</span>
-                <div class="service-content">
-                    <h3 class="service-title">Warehousing</h3>
-                    <p class="service-text">Organized, efficient storage.</p>
-                </div>
-            </div>
-            <hr>
-
-            <div class="service-item">
-                <span class="number">003</span>
-                <div class="service-content">
-                    <h3 class="service-title">Customs clearance</h3>
-                    <p class="service-text">Smooth international processing.</p>
-                </div>
-            </div>
-            <hr>
-
-            <div class="service-item">
-                <span class="number">004</span>
-                <div class="service-content">
-                    <h3 class="service-title">Last-mile delivery</h3>
-                    <p class="service-text">Fast delivery to customers.</p>
-                </div>
-            </div>
-            <hr>
-
-            <div class="service-item">
-                <span class="number">005</span>
-                <div class="service-content">
-                    <h3 class="service-title">Supply chain consulting</h3>
-                    <p class="service-text">Optimized logistics strategies.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-
-    <section class="real-time-tracking">
-        <div class="container real">
-            <div class="tracking-header">
-                <h2 class="tracking-title">Real-time tracking,<br>Stay in control</h2>
-                <p class="tracking-content">
-                    Monitor your shipments at<br>
-                    every stage with our advanced<br>
-                    tracking system
-                </p>
-            </div>
-            <div class="tracking-box">
-                <img src="Detail Image Container.svg" alt="Tracking Map" class="tracking-image">
-            </div>
+    <section class="hero-section">
+        <div class="container n-hero">
+            <h1 class="hero-heading">
+                Efficient logistics<br>
+                solutions tailor<span class="outline-effect">e</span>d<br>
+                to your ne<span class="square-cut">eds</span>
+            </h1>
         </div>
     </section>
     
     
 
 
+
+    <section class="tabbed-input-section">
+        <div class="container c-tab">
+            <nav class="tab-nav">
+                <button class="tab active" onclick="switchTab(event, 'shipping-rate')">Shipping rate</button>
+                <button class="tab" onclick="switchTab(event, 'tracking')">Tracking</button>
+                <button class="tab" onclick="switchTab(event, 'drop-point')">Drop point</button>
+            </nav>
+    
+
+            <div class="tab-content" id="shipping-rate">
+                <div class="input-group input-tab">
+                    <div class="input-wrapper">
+                        <label>From</label>
+                        <div class="input-icon-container">
+                            <span class="icon">
+                                <img src="location.svg" alt="">
+                            </span>
+                            <input type="text" placeholder="Choose location" class="location-icon">
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <label>To</label>
+                        <div class="input-icon-container">
+                            <span class="icon">
+                                <img src="location.svg" alt="">
+                            </span>
+                            <input type="text" placeholder="Choose location" class="location-icon">
+                        </div>
+                    </div>  
+                </div>
+    
+                <div class="input-group input-tab">
+                    <div class="input-wrapper weight">
+                        <label>Weight</label>
+                        <div class="input-icon-container">
+                            <span class="icon">
+                                <img src="package.svg" alt="">
+                            </span>
+                            <input type="text" placeholder="Enter weight" class="weight-icon">
+                            <span class="unit u-kg">Kg</span>
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <label>Volume</label>
+                        <input type="text" placeholder="Length">
+                        <span class="unit">Cm</span>
+                    </div>
+                    <div class="input-wrapper">
+                        <label class="hidden-label">Volume</label> 
+                        <input type="text" placeholder="Width">
+                        <span class="unit">Cm</span>
+                    </div>
+                    <div class="input-wrapper">
+                        <label class="hidden-label">Volume</label> 
+                        <input type="text" placeholder="Height">
+                        <span class="unit">Cm</span>
+                    </div>
+                    <div class="input-wrapper bttn">
+                        <label class="hidden-label">Button</label> 
+                        <button class="search-btn">Search</button>
+                    </div>
+                </div>
+            </div>
+    
+
+            <div class="tab-content" id="tracking" style="display: none;">
+                
+                <div class="input-group input-tab">
+                    <div class="input-wrapper">
+                        <label>From</label>
+                        <div class="input-icon-container">
+                            <span class="icon">
+                                <img src="location.svg" alt="">
+                            </span>
+                            <input type="text" placeholder="Choose location" class="location-icon">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="input-group input-tab">
+                    <div class="input-wrapper weight">
+                        <label>Weight</label>
+                        <div class="input-icon-container">
+                            <span class="icon">
+                                <img src="package.svg" alt="">
+                            </span>
+                            <input type="text" placeholder="Enter weight" class="weight-icon">
+                            <span class="unit u-kg">Kg</span>
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <label>Volume</label>
+                        <input type="text" placeholder="Length">
+                        <span class="unit">Cm</span>
+                    </div>
+                    <div class="input-wrapper">
+                        <label class="hidden-label">Volume</label> 
+                        <input type="text" placeholder="Width">
+                        <span class="unit">Cm</span>
+                    </div>
+                    <div class="input-wrapper">
+                        <label class="hidden-label">Volume</label> 
+                        <input type="text" placeholder="Height">
+                        <span class="unit">Cm</span>
+                    </div>
+                    <div class="input-wrapper bttn">
+                        <label class="hidden-label">Button</label> 
+                        <button class="search-btn">Search</button>
+                    </div>
+                </div>
+            </div>
+    
+            </div>
+    
+
+            <div class="tab-content" id="drop-point" style="display: none;">
+                <div class="input-group input-tab">
+                    <div class="input-wrapper">
+                        <label>From</label>
+                        <div class="input-icon-container">
+                            <span class="icon">
+                                <img src="location.svg" alt="">
+                            </span>
+                            <input type="text" placeholder="Choose location" class="location-icon">
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <label>To</label>
+                        <div class="input-icon-container">
+                            <span class="icon">
+                                <img src="location.svg" alt="">
+                            </span>
+                            <input type="text" placeholder="Choose location" class="location-icon">
+                        </div>
+                    </div>  
+                </div>
+    
+                <div class="input-group input-tab">
+                    <div class="input-wrapper weight">
+                        <label>Weight</label>
+                        <div class="input-icon-container">
+                            <span class="icon">
+                                <img src="package.svg" alt="">
+                            </span>
+                            <input type="text" placeholder="Enter weight" class="weight-icon">
+                            <span class="unit u-kg">Kg</span>
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <label>Volume</label>
+                        <input type="text" placeholder="Length">
+                        <span class="unit">Cm</span>
+                    </div>
+                    <div class="input-wrapper bttn">
+                        <label class="hidden-label">Button</label> 
+                        <button class="search-btn">Search</button>
+                    </div>
+                </div>
+            </div>
+    
+            </div>
+        </div>
+    </section>
+    
+
+
+    
+
+    <!-- 3. Logistics section -->
+    <section class="logistic-partner">
+        <div class="container logistic">
+            <div class="row align-items-center">
+                <div class="col-lg-6 l-grey-box-column">
+                    <div class="logistic-grey-box">
+                        <img src="logistic2_img.jpg" alt="" class="logistic-image">
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 l-content-column">
+                    <h2 class="logistic-heading">
+                        Logistics that<br>
+                        move your<br>
+                        business
+                    </h2>
+                    <p class="logistic-text">
+                        In the fast-paced world of global trade, timing<br>
+                        is everything. With our logistics expertise, we<br>
+                        don't just deliver goods — we deliver peace of<br>
+                        mind. From precise coordination to lightning-<br>
+                        fast execution, we are your go-to logistics<br>
+                        partner that makes sure your supply chain<br>
+                        never misses a beat.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Tailored Solutions -->
+    <section class="tailored-section">
+        <div class="left-section">
+            <h2 class="tailored-heading">Tailored solutions<br>for your needs</h2>
+            <div class="t-grey-box">
+                <img src="tailored2_img.jpg" alt="" class="tailored-image">
+            </div>
+        </div>
+        
+        <div class="right-section">
+            <div class="service-list">
+                <div class="service-item">
+                    <span class="number">001</span>
+                    <div class="service-content">
+                        <h3 class="service-title">Freight forwarding</h3>
+                        <p class="service-text">Fast and cost-effective transport.</p>
+                    </div>
+                </div>
+                <hr>
+    
+                <div class="service-item">
+                    <span class="number">002</span>
+                    <div class="service-content">
+                        <h3 class="service-title">Warehousing</h3>
+                        <p class="service-text">Organized, efficient storage.</p>
+                    </div>
+                </div>
+                <hr>
+    
+                <div class="service-item">
+                    <span class="number">003</span>
+                    <div class="service-content">
+                        <h3 class="service-title">Customs clearance</h3>
+                        <p class="service-text">Smooth international processing.</p>
+                    </div>
+                </div>
+                <hr>
+    
+                <div class="service-item">
+                    <span class="number">004</span>
+                    <div class="service-content">
+                        <h3 class="service-title">Last-mile delivery</h3>
+                        <p class="service-text">Fast delivery to customers.</p>
+                    </div>
+                </div>
+                <hr>
+    
+                <div class="service-item">
+                    <span class="number">005</span>
+                    <div class="service-content">
+                        <h3 class="service-title">Supply chain consulting</h3>
+                        <p class="service-text">Optimized logistics strategies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+    
+<!-- Real-time Tracking Section -->
+<section class="real-time-tracking">
+    <div class="container real">
+        <div class="tracking-header">
+            <h2 class="tracking-title">Real-time tracking,<br>Stay in control</h2>
+            <p class="tracking-content">
+                Monitor your shipments at<br>
+                every stage with our advanced<br>
+                tracking system.
+            </p>
+        </div>
+
+        <div class="tracking-box">
+            <iframe 
+                class="tracking-map"
+                loading="lazy"
+                allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30773279.53444763!2d61.032955308692095!3d19.69116178527663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1741931682594!5m2!1sen!2sin">
+            </iframe>
+            <img src="Detail Image Container.svg" alt="Tracking Map" class="tracking-image">
+        </div>
+    </div>
+</section>
+
+    
+
+    <!-- 6. Eco-logistics -->
     <section class="eco-partner">
         <div class="container eco">
             <div class="row align-items-center">
@@ -1006,13 +1084,15 @@ function switchTab(event, tabId) {
                     </p>
                 </div>
                 <div class="col-lg-6 e-grey-box-column">
-                    <div class="e-grey-box"></div>
+                    <div class="e-grey-box">
+                        <img src="eco_img.jpg" alt="" class="eco-image">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-
+    <!-- 7. Smart Logistics -->
     <section class="smart-logistics">
         <div class="container smart">
             <h2 class="smart-heading">Smart Logistics<br>For Every Industry</h2>
@@ -1056,13 +1136,15 @@ function switchTab(event, tabId) {
 
 
     <section class="trusted-partner">
-        <div class="container">
+        <div class="container trust">
             <div class="row align-items-center">
-                <div class="col-lg-6 grey-box-column">
-                    <div class="trust-grey-box"></div>
+                <div class="col-lg-6 t-grey-box-column">
+                    <div class="trust-grey-box">
+                        <img src="trusted_img.jpg" alt="" class="trusted-image">
+                    </div>
                 </div>
                 
-                <div class="col-lg-6 content-column">
+                <div class="col-lg-6 t-content-column">
                     <h2 class="trusted-heading">
                         Your trusted<br>
                         partner,<br>
@@ -1083,9 +1165,9 @@ function switchTab(event, tabId) {
     </section>
     
     
-
+    <!-- 8. FAQ Section -->
 <section class="faq-section">
-    <div class="container">
+    <div class="container faq">
         <h2 class="faq-heading">Have Questions?<br>We’ve Got Answers</h2>
         
         <div class="faq-box open">
@@ -1098,7 +1180,7 @@ function switchTab(event, tabId) {
             </div>
         </div>
 
-        <div class="faq-box open ">
+        <div class="faq-box open">
             <div class="faq-question">
                 <span>Can I track my shipments?</span>
                 <span class="toggle-icon">−</span>
@@ -1125,8 +1207,9 @@ function switchTab(event, tabId) {
 </section>
 
 
+    <!-- 9. Footer -->
     <footer class="footer">
-        <div class="container">
+        <div class="container foot">
             <div class="d-flex justify-content-between align-items-center c-border-bottom">
                 <div class="d-flex align-items-center">
                     <img src="boat-outline.svg" alt="" class="me-2">
@@ -1138,40 +1221,40 @@ function switchTab(event, tabId) {
 
             <div class="row p1">
                 <div class="col-lg-3">
-                    <p class="text-muted">With our logistics expertise, we don't just deliver goods — we deliver peace of mind.</p>
+                    <p class="c-text-muted">With our logistics expertise, we don't just deliver goods — we deliver peace of mind.</p>
                     <a href="#" class="text-white tw learn-more">Learn more</a>
                 </div>
     
                 <div class="col-lg-3">
                     <h6 class="text-white tw mb-3">Navigations</h6>
-                    <ul class="list-unstyled text-muted p2">
-                        <li><a href="#" class="text-muted text-decoration-none">Home</a></li>
-                        <li><a href="#" class="text-muted text-decoration-none">Services</a></li>
-                        <li><a href="#" class="text-muted text-decoration-none">Company</a></li>
-                        <li><a href="#" class="text-muted text-decoration-none">Features</a></li>
-                        <li><a href="#" class="text-muted text-decoration-none">News</a></li>
-                        <li><a href="#" class="text-muted text-decoration-none">Contact</a></li>
+                    <ul class="list-unstyled c-text-muted p2">
+                        <li><a href="#" class="c-text-muted text-decoration-none">Home</a></li>
+                        <li><a href="#" class="c-text-muted text-decoration-none">Services</a></li>
+                        <li><a href="#" class="c-text-muted text-decoration-none">Company</a></li>
+                        <li><a href="#" class="c-text-muted text-decoration-none">Features</a></li>
+                        <li><a href="#" class="c-text-muted text-decoration-none">News</a></li>
+                        <li><a href="#" class="c-text-muted text-decoration-none">Contact</a></li>
                     </ul>
                 </div>
     
 
                 <div class="col-lg-3">
                     <h6 class="text-white tw mb-3">About us</h6>
-                    <ul class="list-unstyled text-muted">
-                        <li><a href="#" class="text-muted text-decoration-none">Our company</a></li>
-                        <li><a href="#" class="text-muted text-decoration-none">Our mission</a></li>
-                        <li><a href="#" class="text-muted text-decoration-none">Careers</a></li>
-                        <li><a href="#" class="text-muted text-decoration-none">Blog</a></li>
-                        <li><a href="#" class="text-muted text-decoration-none">Press releases</a></li>
+                    <ul class="list-unstyled c-text-muted">
+                        <li><a href="#" class="c-text-muted text-decoration-none">Our company</a></li>
+                        <li><a href="#" class="c-text-muted text-decoration-none">Our mission</a></li>
+                        <li><a href="#" class="c-text-muted text-decoration-none">Careers</a></li>
+                        <li><a href="#" class="c-text-muted text-decoration-none">Blog</a></li>
+                        <li><a href="#" class="c-text-muted text-decoration-none">Press releases</a></li>
                     </ul>
                 </div>
                 
                 <div class="col-lg-3">
                     <h6 class="text-white tw mb-3">Subscribe newsletter</h6>
-                    <p class="text-muted">Stay updated with the latest news and offers!</p>
-                    <div class="input-group">
+                    <p class="c-text-muted">Stay updated with the latest news and offers!</p>
+                    <div class="input-group f-group">
                         <input type="email" class="form-control email-input" placeholder="Email address">
-                        <span class="input-group-text bg-transparent border-start-0">
+                        <span class="input-group-text i-g-t bg-transparent border-start-0">
                             <img src="Icon arrow left.svg" alt="" class="arrow-icon">
                         </span>
                     </div>
@@ -1179,9 +1262,13 @@ function switchTab(event, tabId) {
             </div>
 
             <div class="d-flex justify-content-between align-items-center p4">
-                <p class="text-muted mb-0">Copyright © SocioLib 2024</p>
+                <p class="c-text-muted mb-0">Copyright © SocioLib 2024</p>
                 <div class="social-icons">
-                    <img src="Footer Social Media.svg" alt="" class="me-3 social-icon ">
+                    <!-- <img src="Footer Social Media.svg" alt="" class="me-3 social-icon "> -->
+                    <i class="fa-brands me-3 i_class fa-instagram"></i>
+                    <i class="fa-brands me-3 i_class fa-facebook"></i>
+                    <i class="fa-brands me-3 i_class fa-youtube"></i>
+                    <i class="fa-brands me-3 i_class fa-tiktok"></i>
                 </div>
             </div>
         </div>
@@ -1190,7 +1277,7 @@ function switchTab(event, tabId) {
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        document.querySelectorAll('.faq-question').forEach(item => {
+document.querySelectorAll('.faq-question').forEach(item => {
     item.addEventListener('click', () => {
         let parent = item.parentElement;
         let icon = item.querySelector('.toggle-icon');
@@ -1221,6 +1308,15 @@ function switchTab(event, tabId) {
         }
     });
 });
+
+function switchTab(event, tabId) {
+        document.querySelectorAll('.tab-content').forEach(tab => tab.style.display = 'none');
+        document.getElementById(tabId).style.display = 'block';
+        
+        document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+        event.currentTarget.classList.add('active');
+    }
+
     </script>
 </body>
 </html>
