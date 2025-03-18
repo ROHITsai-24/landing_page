@@ -160,14 +160,23 @@
     top: 0;
     width: 100%;
     background: #575757; 
-    padding: 20px 0;
+    padding: 20px 30px; 
     z-index: 100;
 }
+
+
+@media (min-width: 1024px) {
+    .navbar {
+        padding: 20px 100px; 
+    }
+}
+
 .navbar .n-hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10px;
+    max-width: 1300px;
+    margin: 0 auto;
 }
 
 .logo {
@@ -199,15 +208,6 @@
     color: white;
 }
 
-.hero-section::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 12.5rem;
-    background: linear-gradient(to top, #af7c4d, #575757);
-}
 .outline-effect {
     background: linear-gradient(to top, #575757 37%, white 37%);
     -webkit-background-clip: text;
@@ -222,6 +222,73 @@
     background: linear-gradient(145deg, white 46%, #575757 40%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+
+.hero-section::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 12.5rem;
+    background: linear-gradient(to top, #af7c4d, #575757);
+}
+input, textarea {
+    color: white !important;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 100px 20px 150px;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero-heading {
+        font-size: 2.5rem;
+        max-width: 100%;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+
+    .nav-links {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #575757;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .nav-links.show {
+        display: flex; 
+    }
+
+    .navbar-toggler {
+        display: block;
+        background: transparent;
+        border: none;
+    }
+
+    .tabbed-input-section {
+        width: 90%;
+        max-width: 100%;
+        padding: 20px;
+        margin: -100px auto 0;
+    }
+    .hero-section::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 8rem;
+    background: linear-gradient(to top, #af7c4d, #575757);
+}
 }
 
 
@@ -283,6 +350,50 @@
     border-radius: 8px;
     object-fit: cover;
 }
+@media (max-width: 768px) {
+    .logistic-partner .logistic {
+        flex-direction: column; 
+        gap: 20px; 
+        text-align: center; 
+    }
+
+    .logistic-heading {
+        font-size: 40px; 
+        text-align: center;
+        position: static; 
+        margin: 0 auto 20px auto; 
+        width: 100%;
+        font-weight: normal;
+    }
+
+    .logistic-grey-box {
+        width: 100%; 
+        height: 300px;
+        max-width: 500px; 
+        margin: 0 auto; 
+    }
+
+    .l-content-column {
+        margin-top: 0; 
+        padding: 20px; 
+        text-align: center;
+    }
+
+    .logistic-text {
+        font-size: 14px;
+        line-height: 1.4;
+        padding: 0 20px; 
+    }
+
+
+    .l-content-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
 
 /* tailoured section */
 .tailored-section {
@@ -373,6 +484,61 @@ hr {
     border-radius: 8px;
     object-fit: cover;
 }
+@media (max-width: 768px) {
+    .tailored-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 40px 100px;
+        gap: 40px; 
+    }
+
+    .left-section {
+        align-items: center;
+        text-align: center;
+        min-width: auto;
+        width: 100%;
+    }
+
+    .tailored-heading {
+        font-size: 40px;
+        text-align: center;
+        white-space: normal; 
+    }
+
+    .t-grey-box {
+        width: 100%;
+        max-width: 350px; 
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .right-section {
+        width: 100%;
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    .service-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 50px; 
+    }
+
+    .number {
+        min-width: 30px;
+        font-size: 14px;
+    }
+
+    .service-title {
+        font-size: 16px;
+    }
+
+    .service-text {
+        font-size: 13px;
+    }
+}
 
 
 /* real-time */
@@ -445,6 +611,39 @@ hr {
     z-index: 2;
 }
 
+@media (max-width: 768px) {
+    .real-time-tracking {
+        padding: 30px 10px; 
+    }
+
+    .tracking-header {
+        flex-direction: column; 
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .tracking-title {
+        font-size: 32px; 
+    }
+
+    .tracking-content {
+        font-size: 14px; 
+        max-width: 100%; 
+    }
+
+    .tracking-box {
+        height: 400px; 
+        padding: 10px;
+    }
+
+    .tracking-image {
+        width: 80%; 
+        max-width: 250px; 
+        bottom: 10px;
+        left: 10px;
+        border-radius: 6px; 
+    }
+}
 
 
 /* eco-logistics */
@@ -462,7 +661,6 @@ hr {
 .e-grey-box {
     width: 400px; 
     height: 550px; 
-    background-color: #D3D3D3;
     border-radius: 10px;
 }
 
@@ -497,6 +695,63 @@ hr {
     border-radius: 8px;
     object-fit: cover;
 }
+
+@media (max-width: 768px) {
+    .eco {
+        flex-direction: column; 
+        gap: 30px; 
+        align-items: center; 
+        text-align: center; 
+        padding-top: 50px;
+    }
+
+    .eco-heading {
+        font-size: 32px; 
+        text-align: center;  
+        width: 90%; 
+        margin-bottom: 15px;
+        font-weight: normal;
+    }
+
+    .eco-text {
+        font-size: 14px; 
+        line-height: 1.4;
+        text-align: left;
+        width: 80%;
+        margin: 0 auto; 
+    }
+
+    .e-grey-box {
+        width: 80%; 
+        height: auto; 
+        display: flex;
+        justify-content: center;
+    }
+
+    .eco-image {
+        width: 100%; 
+        max-width: 330px; 
+        height: 250px; 
+        display: block;
+        margin: 0 auto; 
+    }
+
+    .e-content-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        padding: 20px; 
+        max-width: 100%;
+    }
+
+    .e-grey-box-column {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+}
+
+
 
 /* smart logistics */
 .smart-logistics {
@@ -562,6 +817,47 @@ hr {
     color: #696E76;
 }
 
+@media (max-width: 768px) {
+    .smart-heading {
+        font-size: 40px;
+    }
+
+    .cards-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        justify-content: center;
+        align-items: center; 
+        padding: 0 20px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 180px;
+        height: 240px;
+        padding: 15px;
+    }
+
+    .icon-circle {
+        width: 50px;
+        height: 50px;
+        top: 15px;
+        left: 15px;
+    }
+
+    .icon-circle img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .card-title {
+        font-size: 16px;
+    }
+
+    .card-content {
+        font-size: 12px;
+    }
+}
 
 
 /* another section */
@@ -580,7 +876,6 @@ hr {
 .trust-grey-box {
     width: 400px; 
     height: 550px; 
-    background-color: #D3D3D3;
     border-radius: 10px;
 }
 
@@ -616,6 +911,61 @@ hr {
     border-radius: 8px;
     object-fit: cover;
 }
+@media (max-width: 768px) {
+    .trust {
+        flex-direction: column; 
+        gap: 30px; 
+        align-items: center; 
+        text-align: center; 
+        padding-top: 10px;
+    }
+
+    .trusted-heading {
+        font-size: 32px; 
+        text-align: center; 
+        width: 90%; 
+        margin-bottom: 15px;
+        font-weight: normal;
+    }
+
+    .trusted-text {
+        font-size: 14px; 
+        line-height: 1.4;
+        text-align: left;
+        width: 90%;
+        margin: 0 auto; 
+    }
+
+    .trust-grey-box {
+        width: 80%; 
+        height: auto; 
+        display: flex;
+        justify-content: center;
+    }
+
+    .trusted-image {
+        width: 100%; 
+        max-width: 330px; 
+        height: 250px; 
+        display: block;
+        margin: 0 auto; 
+    }
+
+    .t-content-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        padding: 20px 40px; 
+        max-width: 100%;
+    }
+
+    .t-grey-box-column {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        order: 2;
+    }
+} 
 
 
 
@@ -668,6 +1018,23 @@ hr {
 .faq-box.open .faq-answer {
     display: block;
 }
+@media (max-width: 768px) {
+    .faq-heading {
+        font-size: 40px; 
+    }
+
+    .faq-question {
+        font-size: 16px; 
+    }
+
+    .faq-answer {
+        font-size: 14px;
+    }
+
+    .toggle-icon {
+        font-size: 18px; 
+    }
+}
 
 
 
@@ -692,7 +1059,7 @@ hr {
 .email-input {
     background: transparent;
     border: 1px solid #5A636F;
-    color: #9EA4AD !;
+    color: #9EA4AD;
     padding: 10px;
 }
 
@@ -704,14 +1071,12 @@ hr {
 .arrow-icon {
     width: 20px;
     height: 20px;
-
 }
 
 .c-border-bottom{
     padding-bottom: 50px;
-    border-bottom: 1px solid #5A636F 
+    border-bottom: 1px solid #5A636F; 
 }
-
 
 .p1{
     padding-top: 50px;
@@ -725,55 +1090,128 @@ hr {
     position: relative;
     left: 80px; 
 }
+
 .tw{
     font-weight: 700;
 }
+
 .email-input::placeholder {
-    color: #9EA4AD 
+    color: #9EA4AD; 
 }
+
 .social-icon {
     width: 40px; 
     height: 40px;
 }
+
 .p4{
     padding-top: 30px;
 }
-
 
 .social-icon {
     width: 150px; 
     height: 40px;
 }
+
 .learn-more {
     text-decoration: underline;
     text-decoration-thickness: 1px; 
     text-underline-offset: 12px; 
     color: white; 
 }
+
 .i_class{
     font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 30px 20px 15px; 
+    }
+
+    .c-border-bottom {
+        padding-bottom: 20px; 
+    }
+
+    .p1 {
+        padding-top: 20px; 
+    }
+
+    .footer .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .footer .col-lg-3:nth-child(2), 
+    .footer .col-lg-3:nth-child(3) {
+        flex: 1;
+        min-width: 45%;
+    }
+
+    .footer h6 {
+        font-size: 16px;
+    }
+
+    .footer p, 
+    .footer a {
+        font-size: 14px;
+    }
+
+
+    .f-group {
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+    .email-input {
+        padding: 8px;
+    }
+
+    .i-g-t {
+        padding: 8px;
+    }
+
+    .social-icons {
+        font-size: 18px;
+    }
+
+    .social-icons i {
+        margin-right: 10px;
+    }
+
+    .p4 {
+        padding-top: 15px; 
+    }
 }
 
   </style>
 </head>
 <body>
     
-    <header class="navbar">
-        <div class="container n-hero">
+    <nav class="navbar navbar-expand-lg  navbar-dark">
+        <div class="container-fluid">
             <div class="logo">
                 <img src="boat-outline.svg" alt="CargoLog Logo">
                 CargoLog
             </div>
-            <nav class="nav-links">
-                <a href="#">Home</a>
-                <a href="#">Services</a>
-                <a href="#">Company</a>
-                <a href="#">Features</a>
-                <a href="#">News</a>
-                <a href="#">Contact</a>
-            </nav>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Company</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
         </div>
-    </header>
+    </nav>
+    
     
     <section class="hero-section">
         <div class="container n-hero">
@@ -968,7 +1406,7 @@ hr {
                 </div>
                 
                 <div class="col-lg-6 l-content-column">
-                    <h2 class="logistic-heading">
+                    <h2 class="logistic-heading order-sm-1">
                         Logistics that<br>
                         move your<br>
                         business
