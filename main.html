@@ -8,1185 +8,8 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f9f9f9;
-        }
-        .section {
-            padding: 60px 0;
-        }
-        html, body {
-    overflow-x: hidden;
-    max-width: 100%;
-}
-
-/* tab section */
-
-        .tabbed-input-section {
-            position: relative;
-    background: #FFFFFF;
-    border-radius: 24px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 40px;
-    margin: 0 auto;
-    max-width: 1200px;
-    margin: -150px auto 0; 
-    z-index: 10;
-}
-
-.tab-nav {
-    display: flex;
-    background: #F9F9F9;
-    border-radius: 60px;
-    padding: 10px;
-    justify-content: flex-start;
-    gap: 10px;
-}
-
-.tab {
-    background: white;
-    border-radius: 60px;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-}
-
-.tab.active {
-    background: #E4E4E4;
-}
-
-.input-tab {
-    display: flex;
-    gap: 15px;
-    margin-top: 20px;
-    align-items: center; 
-    flex-wrap: wrap;
-}
-
-.input-wrapper {
-    flex: 1;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    min-width: 150px;
-}
-
-.weight {
-    flex: 1.5;
-}
-
-.input-icon {
-    padding-left: 35px;
-}
-
-.input-wrapper input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #E4E4E4;
-    border-radius: 8px;
-    font-size: 14px;
-}
-
-.unit {
-    position: absolute;
-    right: 10px;
-    top: 67%;
-    transform: translateY(-50%);
-    color: #666;
-}
-
-.u-kg{
-    top:50%
-}
-.hidden-label {
-    visibility: hidden; 
-}
-
-.search-btn {
-    background: #f57600;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-    height: 40px; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 120px;
-}
-.bttn{
-    max-width: 80px;
-}
-.input-icon-container {
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-
-.icon {
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    align-items: center;
-}
-
-.input-icon-container input {
-    width: 100%;
-    padding: 10px 10px 10px 35px;
-    border: 1px solid #E4E4E4;
-    border-radius: 8px;
-    font-size: 14px;
-    outline: none;
-    transition: border-color 0.3s;
-    min-width: 180px; 
-}
-
-
-.input-icon-container input:focus {
-    border-color: #86b7fe;
-}
-
-
-
-/* hero section */
-
-.navbar {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    background: #575757; 
-    padding: 20px 30px; 
-    z-index: 100;
-}
-
-
-@media (min-width: 1024px) {
-    .navbar {
-        padding: 20px 100px; 
-    }
-}
-
-.navbar .n-hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1300px;
-    margin: 0 auto;
-}
-
-.logo {
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    font-size: 14px;
-}
-
-.hero-section {
-    background: #575757;
-    position: relative;
-    padding: 180px 50px 250px;
-}
-
-.hero-heading {
-    font-family: 'Anton', sans-serif;
-    font-size: 100px;
-    line-height: 1.2;
-    text-align: left;
-    max-width: 800px;
-    letter-spacing: 5px;
-    color: white;
-}
-
-.outline-effect {
-    background: linear-gradient(to top, #575757 37%, white 37%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 2px white;
-}
-
-.square-cut {
-    position: relative;
-    display: inline-block;
-    -webkit-text-stroke: 2px white;
-    background: linear-gradient(145deg, white 46%, #575757 40%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-
-.hero-section::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 12.5rem;
-    background: linear-gradient(to top, #af7c4d, #575757);
-}
-input, textarea {
-    color: white !important;
-}
-
-@media (max-width: 768px) {
-    .hero-section {
-        padding: 100px 20px 150px;
-        max-width: 100%;
-        text-align: center;
-    }
-
-    .hero-heading {
-        font-size: 2.5rem;
-        max-width: 100%;
-        text-align: center;
-        letter-spacing: 1px;
-    }
-
-    .nav-links {
-        display: none; 
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background: #575757;
-        padding: 1rem;
-        text-align: center;
-    }
-
-    .nav-links.show {
-        display: flex; 
-    }
-
-    .navbar-toggler {
-        display: block;
-        background: transparent;
-        border: none;
-    }
-
-    .tabbed-input-section {
-        width: 90%;
-        max-width: 100%;
-        padding: 20px;
-        margin: -100px auto 0;
-    }
-    .hero-section::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 8rem;
-    background: linear-gradient(to top, #af7c4d, #575757);
-}
-}
-
-
-
-/* logistic */
-.logistic-partner .logistic {
-    max-width: 1200px; 
-    margin: 0 auto; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px; 
-    margin-bottom: 0; 
-}
-
-
-.logistic-grey-box {
-    width: 400px; 
-    height: 500px; 
-    background-color: #D3D3D3;
-    border-radius: 10px;
-}
-
-
-.l-grey-box-column, .l-content-column {
-    padding: 100px 100px 50px 100px;
-}
-
-.logistic-text {
-    color: #696E76;
-    font-size: 1rem;
-    line-height: 1.5;
-    text-align: left;
-}
-
-.l-content-column {
-    position: relative; 
-    margin-top: 260px;
-    max-width: 575px;
-}
-
-.logistic-heading {
-    font-family: 'Anton', sans-serif;
-    font-size: 60px;
-    font-weight: bold;
-    line-height: 1.2;
-    text-align: left;
-    margin-bottom: 25px;
-    
-    position: absolute;
-    bottom: 250px;
-    left: -120px; 
-    z-index: 2;
-    width: 100%; 
-}
-.logistic-image {
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
-    object-fit: cover;
-}
-@media (max-width: 768px) {
-    .logistic-partner .logistic {
-        flex-direction: column; 
-        gap: 20px; 
-        text-align: center; 
-    }
-
-    .logistic-heading {
-        font-size: 40px; 
-        text-align: center;
-        position: static; 
-        margin: 0 auto 20px auto; 
-        width: 100%;
-        font-weight: normal;
-    }
-
-    .logistic-grey-box {
-        width: 100%; 
-        height: 300px;
-        max-width: 500px; 
-        margin: 0 auto; 
-    }
-
-    .l-content-column {
-        margin-top: 0; 
-        padding: 20px; 
-        text-align: center;
-    }
-
-    .logistic-text {
-        font-size: 14px;
-        line-height: 1.4;
-        padding: 0 20px; 
-    }
-
-
-    .l-content-column {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-}
-
-
-/* tailoured section */
-.tailored-section {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 60px 100px;
-    padding-bottom: 100px;
-    display: flex;
-    justify-content: center; 
-    align-items: flex-start; 
-gap: 180px;
-}
-
-.left-section {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    min-width: 400px;
-}
-
-.tailored-heading {
-    font-family: 'Anton', sans-serif;
-    font-size: 60px;
-    line-height: 1.1;
-    text-align: left;
-    max-width: 100%;
-    white-space: nowrap;
-}
-
-.t-grey-box {
-    width: 450px;
-    height: 300px;
-    border-radius: 8px;
-    margin-top: 150px; 
-    padding: 0px;
-    display: inline-block;
-}
-
-.right-section {
-    flex: 1; 
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-top: 130px;
-}
-
-.service-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 100px;
-    margin-bottom: 20px;
-}
-
-.number {
-    font-weight: bold;
-    font-size: 16px;
-    min-width: 40px; 
-}
-
-.service-content {
-    flex: 1;
-}
-
-.service-title {
-    font-weight: bold;
-    font-size: 18px;
-    margin-bottom: 5px;
-}
-
-.service-text {
-    font-size: 14px;
-    color: #696E76;
-    margin-bottom: 10px;
-}
-
-hr {
-    border: 1px solid;
-    border-color: #C0C0C0;
-    height: 1px;
-    background-color: #DCDCDC;
-    margin: 0 0 20px 0;
-}
-
-.tailored-image {
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
-    object-fit: cover;
-}
-@media (max-width: 768px) {
-    .tailored-section {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 40px 100px;
-        gap: 40px; 
-    }
-
-    .left-section {
-        align-items: center;
-        text-align: center;
-        min-width: auto;
-        width: 100%;
-    }
-
-    .tailored-heading {
-        font-size: 40px;
-        text-align: center;
-        white-space: normal; 
-    }
-
-    .t-grey-box {
-        width: 100%;
-        max-width: 350px; 
-        height: auto;
-        margin-top: 20px;
-    }
-
-    .right-section {
-        width: 100%;
-        text-align: left;
-        margin-top: 20px;
-    }
-
-    .service-item {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 50px; 
-    }
-
-    .number {
-        min-width: 30px;
-        font-size: 14px;
-    }
-
-    .service-title {
-        font-size: 16px;
-    }
-
-    .service-text {
-        font-size: 13px;
-    }
-}
-
-
-/* real-time */
-
-.real-time-tracking {
-    background-color: #2B4552;
-    border-radius: 24px;
-    padding: 50px 15px 15px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.real {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.tracking-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.tracking-title {
-    font-family: 'Anton', sans-serif;
-    font-size: 48px;
-    color: white;
-    line-height: 1.2;
-}
-
-.tracking-content {
-    color: white;
-    font-size: 16px;
-    max-width: 250px;
-    text-align: left;
-}
-
-.tracking-box {
-    background-color: #D3D3D3;
-    border-radius: 12px;
-    width: 100%;
-    height: 600px;
-    position: relative;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.tracking-map {
-    width: 100%;
-    height: 100%;
-    border-radius: 12px;
-    border: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
-
-
-.tracking-image {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    border-radius: 8px;
-    width: 350px;
-    z-index: 2;
-}
-
-@media (max-width: 768px) {
-    .real-time-tracking {
-        padding: 30px 10px; 
-    }
-
-    .tracking-header {
-        flex-direction: column; 
-        align-items: flex-start;
-        gap: 15px;
-    }
-
-    .tracking-title {
-        font-size: 32px; 
-    }
-
-    .tracking-content {
-        font-size: 14px; 
-        max-width: 100%; 
-    }
-
-    .tracking-box {
-        height: 400px; 
-        padding: 10px;
-    }
-
-    .tracking-image {
-        width: 80%; 
-        max-width: 250px; 
-        bottom: 10px;
-        left: 10px;
-        border-radius: 6px; 
-    }
-}
-
-
-/* eco-logistics */
-.eco-partner .eco {
-    max-width: 1200px; 
-    margin: 0 auto; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px; 
-    margin-bottom: 0; 
-}
-
-
-.e-grey-box {
-    width: 400px; 
-    height: 550px; 
-    border-radius: 10px;
-}
-
-
-.e-grey-box-column, .e-content-column {
-    padding: 100px 100px 50px 100px;
-}
-
-
-.e-content-column {
-    max-width: 575px; 
-}
-
-.eco-heading {
-    font-family: 'Anton', sans-serif;
-    font-size: 60px; 
-    font-weight: bold;
-    line-height: 1.2;
-    text-align: left;
-    margin-bottom: 25px; 
-}
-
-.eco-text {
-    color: #696E76;
-    font-size: 1rem;
-    line-height: 1.5;
-    text-align: left;
-}
-.eco-image {
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
-    object-fit: cover;
-}
-
-@media (max-width: 768px) {
-    .eco {
-        flex-direction: column; 
-        gap: 30px; 
-        align-items: center; 
-        text-align: center; 
-        padding-top: 50px;
-    }
-
-    .eco-heading {
-        font-size: 32px; 
-        text-align: center;  
-        width: 90%; 
-        margin-bottom: 15px;
-        font-weight: normal;
-    }
-
-    .eco-text {
-        font-size: 14px; 
-        line-height: 1.4;
-        text-align: left;
-        width: 80%;
-        margin: 0 auto; 
-    }
-
-    .e-grey-box {
-        width: 80%; 
-        height: auto; 
-        display: flex;
-        justify-content: center;
-    }
-
-    .eco-image {
-        width: 100%; 
-        max-width: 330px; 
-        height: 250px; 
-        display: block;
-        margin: 0 auto; 
-    }
-
-    .e-content-column {
-        display: flex;
-        flex-direction: column;
-        align-items: center; 
-        padding: 20px; 
-        max-width: 100%;
-    }
-
-    .e-grey-box-column {
-        display: flex;
-        justify-content: center;
-        padding: 0;
-    }
-}
-
-
-
-/* smart logistics */
-.smart-logistics {
-    text-align: center;
-    padding: 60px 20px;
-}
-
-.smart-heading {
-    font-family: 'Anton', sans-serif;
-    font-size: 60px;
-    margin-bottom: 60px;
-}
-
-.cards-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.card {
-    width: 270px;
-    height: 350px;
-    background-color: #FFFFFF;
-    border-radius: 16px;
-    border: 1px solid #DCDCDC;
-    padding: 20px;
-    text-align: left;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end; 
-}
-
-.icon-circle {
-    width: 60px;
-    height: 60px;
-    background-color: #FFFFFF; 
-    border: 2px solid #DCDCDC; 
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-}
-
-.icon-circle img {
-    width: 30px;
-    height: 30px;
-}
-
-
-.card-title {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-
-.card-content {
-    font-size: 14px;
-    color: #696E76;
-}
-
-@media (max-width: 768px) {
-    .smart-heading {
-        font-size: 40px;
-    }
-
-    .cards-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-        justify-content: center;
-        align-items: center; 
-        padding: 0 20px;
-    }
-
-    .card {
-        width: 100%;
-        max-width: 180px;
-        height: 240px;
-        padding: 15px;
-    }
-
-    .icon-circle {
-        width: 50px;
-        height: 50px;
-        top: 15px;
-        left: 15px;
-    }
-
-    .icon-circle img {
-        width: 24px;
-        height: 24px;
-    }
-
-    .card-title {
-        font-size: 16px;
-    }
-
-    .card-content {
-        font-size: 12px;
-    }
-}
-
-
-/* another section */
-
-.trusted-partner .trust {
-    max-width: 1200px; 
-    margin: 0 auto; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px; 
-    margin-bottom: 0; 
-}
-
-
-.trust-grey-box {
-    width: 400px; 
-    height: 550px; 
-    border-radius: 10px;
-}
-
-
-.t-grey-box-column, .t-content-column {
-    padding: 100px 100px 50px 100px;
-}
-
-
-.t-content-column {
-    max-width: 575px; 
-}
-
-.trusted-heading {
-    font-family: 'Anton', sans-serif;
-    font-size: 60px; 
-    font-weight: bold;
-    line-height: 1.2;
-    text-align: left;
-    margin-bottom: 25px; 
-}
-
-
-.trusted-text {
-    color: #696E76;
-    font-size: 1rem;
-    line-height: 1.5;
-    text-align: left;
-}
-.trusted-image {
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
-    object-fit: cover;
-}
-@media (max-width: 768px) {
-    .trust {
-        flex-direction: column; 
-        gap: 30px; 
-        align-items: center; 
-        text-align: center; 
-        padding-top: 10px;
-    }
-
-    .trusted-heading {
-        font-size: 32px; 
-        text-align: center; 
-        width: 90%; 
-        margin-bottom: 15px;
-        font-weight: normal;
-    }
-
-    .trusted-text {
-        font-size: 14px; 
-        line-height: 1.4;
-        text-align: left;
-        width: 90%;
-        margin: 0 auto; 
-    }
-
-    .trust-grey-box {
-        width: 80%; 
-        height: auto; 
-        display: flex;
-        justify-content: center;
-    }
-
-    .trusted-image {
-        width: 100%; 
-        max-width: 330px; 
-        height: 250px; 
-        display: block;
-        margin: 0 auto; 
-    }
-
-    .t-content-column {
-        display: flex;
-        flex-direction: column;
-        align-items: center; 
-        padding: 20px 40px; 
-        max-width: 100%;
-    }
-
-    .t-grey-box-column {
-        display: flex;
-        justify-content: center;
-        padding: 20px;
-        order: 2;
-    }
-} 
-
-
-
-/* faq section */
-.faq-section {
-    background-color: #f8f9fa;
-    padding: 60px 20px;
-    text-align: center;
-}
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-
-.faq-heading {
-    font-family: 'Anton', sans-serif;
-    font-size: 60px;
-    color: #222;
-    margin-bottom: 40px;
-}
-
-.faq-box {
-    background-color: white;
-    padding: 20px;
-    margin-bottom: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.faq-question {
-    display: flex;
-    justify-content: space-between;
-    font-size: 18px;
-    font-weight: bolder;
-    cursor: pointer;
-}
-
-.toggle-icon {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.faq-answer {
-    font-size: 16px;
-    color: #696E76;
-    margin-top: 10px;
-    text-align: left;
-    display: none;
-}
-.faq-box.open .faq-answer {
-    display: block;
-}
-@media (max-width: 768px) {
-    .faq-heading {
-        font-size: 40px; 
-    }
-
-    .faq-question {
-        font-size: 16px; 
-    }
-
-    .faq-answer {
-        font-size: 14px;
-    }
-
-    .toggle-icon {
-        font-size: 18px; 
-    }
-}
-
-
-
-        /* footer */
-        .footer {
-    background-color: #203544;
-    border-radius: 15px;
-    color: #C6C8CB;
-    padding: 50px 30px 25px 30px;
-    max-width: 1300px; 
-    margin: 0 auto 20px auto; 
-}
-
-.foot {
-    padding: 20px 20px; 
-}
-
-.c-text-muted {
-    color: #9EA4AD;
-}
-
-.email-input {
-    background: transparent;
-    border: 1px solid #5A636F;
-    color: #9EA4AD;
-    padding: 10px;
-}
-
-.i-g-t {
-    border: 1px solid #5A636F;
-    padding: 10px;
-}
-
-.arrow-icon {
-    width: 20px;
-    height: 20px;
-}
-
-.c-border-bottom{
-    padding-bottom: 50px;
-    border-bottom: 1px solid #5A636F; 
-}
-
-.p1{
-    padding-top: 50px;
-}
-
-.footer ul.list-unstyled li {
-    padding-bottom: 8px;
-}
-
-.footer .col-lg-3:nth-child(2) {
-    position: relative;
-    left: 80px; 
-}
-
-.tw{
-    font-weight: 700;
-}
-
-.email-input::placeholder {
-    color: #9EA4AD; 
-}
-
-.social-icon {
-    width: 40px; 
-    height: 40px;
-}
-
-.p4{
-    padding-top: 30px;
-}
-
-.social-icon {
-    width: 150px; 
-    height: 40px;
-}
-
-.learn-more {
-    text-decoration: underline;
-    text-decoration-thickness: 1px; 
-    text-underline-offset: 12px; 
-    color: white; 
-}
-
-.i_class{
-    font-size: 20px;
-}
-
-@media (max-width: 768px) {
-    .footer {
-        padding: 30px 20px 15px; 
-    }
-
-    .c-border-bottom {
-        padding-bottom: 20px; 
-    }
-
-    .p1 {
-        padding-top: 20px; 
-    }
-
-    .footer .row {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 20px;
-    }
-
-    .footer .col-lg-3:nth-child(2), 
-    .footer .col-lg-3:nth-child(3) {
-        flex: 1;
-        min-width: 45%;
-    }
-
-    .footer h6 {
-        font-size: 16px;
-    }
-
-    .footer p, 
-    .footer a {
-        font-size: 14px;
-    }
-
-
-    .f-group {
-        flex-wrap: nowrap;
-        width: 100%;
-    }
-
-    .email-input {
-        padding: 8px;
-    }
-
-    .i-g-t {
-        padding: 8px;
-    }
-
-    .social-icons {
-        font-size: 18px;
-    }
-
-    .social-icons i {
-        margin-right: 10px;
-    }
-
-    .p4 {
-        padding-top: 15px; 
-    }
-}
-
-  </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
@@ -1216,9 +39,9 @@ hr {
     <section class="hero-section">
         <div class="container n-hero">
             <h1 class="hero-heading">
-                Efficient logistics<br>
-                solutions tailor<span class="outline-effect">e</span>d<br>
-                to your ne<span class="square-cut">eds</span>
+                <span class="heading">Efficient logistics</span>
+                <span class="heading">solutions tailor<span class="outline-effect">e</span>d</span>
+                <span class="heading">to your ne<span class="square-cut">eds</span></span>
             </h1>
         </div>
     </section>
@@ -1227,16 +50,23 @@ hr {
 
 
 
-    <section class="tabbed-input-section">
-        <div class="container c-tab">
-            <nav class="tab-nav">
-                <button class="tab active" onclick="switchTab(event, 'shipping-rate')">Shipping rate</button>
-                <button class="tab" onclick="switchTab(event, 'tracking')">Tracking</button>
-                <button class="tab" onclick="switchTab(event, 'drop-point')">Drop point</button>
-            </nav>
-    
+<section class="tabbed-input-section">
+    <div class="container container-tab">
+        <ul class="nav nav-tabs tab-nav" id="tabMenu">
+            <li class="nav-item">
+                <button class="nav-link active tab" data-bs-toggle="tab" data-bs-target="#shipping-rate">Shipping rate</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link tab" data-bs-toggle="tab" data-bs-target="#tracking">Tracking</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link tab" data-bs-toggle="tab" data-bs-target="#drop-point">Drop point</button>
+            </li>
+        </ul>
 
-            <div class="tab-content" id="shipping-rate">
+        <div class="tab-content">
+            <!-- Shipping Rate Tab -->
+            <div class="tab-pane fade show active" id="shipping-rate">
                 <div class="input-group input-tab">
                     <div class="input-wrapper">
                         <label>From</label>
@@ -1257,7 +87,7 @@ hr {
                         </div>
                     </div>  
                 </div>
-    
+
                 <div class="input-group input-tab">
                     <div class="input-wrapper weight">
                         <label>Weight</label>
@@ -1290,10 +120,9 @@ hr {
                     </div>
                 </div>
             </div>
-    
 
-            <div class="tab-content" id="tracking" style="display: none;">
-                
+            <!-- Tracking Tab -->
+            <div class="tab-pane fade" id="tracking">
                 <div class="input-group input-tab">
                     <div class="input-wrapper">
                         <label>From</label>
@@ -1305,7 +134,7 @@ hr {
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="input-group input-tab">
                     <div class="input-wrapper weight">
                         <label>Weight</label>
@@ -1338,11 +167,9 @@ hr {
                     </div>
                 </div>
             </div>
-    
-            </div>
-    
 
-            <div class="tab-content" id="drop-point" style="display: none;">
+            <!-- Drop Point Tab -->
+            <div class="tab-pane fade" id="drop-point">
                 <div class="input-group input-tab">
                     <div class="input-wrapper">
                         <label>From</label>
@@ -1363,7 +190,7 @@ hr {
                         </div>
                     </div>  
                 </div>
-    
+
                 <div class="input-group input-tab">
                     <div class="input-wrapper weight">
                         <label>Weight</label>
@@ -1385,12 +212,10 @@ hr {
                         <button class="search-btn">Search</button>
                     </div>
                 </div>
-            </div>
-    
             </div>
         </div>
-    </section>
-    
+    </div>
+</section>
 
 
     
@@ -1406,19 +231,17 @@ hr {
                 </div>
                 
                 <div class="col-lg-6 l-content-column">
-                    <h2 class="logistic-heading order-sm-1">
-                        Logistics that<br>
-                        move your<br>
-                        business
+                    <h2 class="logistic-heading">
+                        <span class="heading">Logistics that</span>
+                        <span class="heading">move your</span>
+                        <span class="heading">business</span>
                     </h2>
                     <p class="logistic-text">
-                        In the fast-paced world of global trade, timing<br>
-                        is everything. With our logistics expertise, we<br>
-                        don't just deliver goods — we deliver peace of<br>
-                        mind. From precise coordination to lightning-<br>
-                        fast execution, we are your go-to logistics<br>
-                        partner that makes sure your supply chain<br>
-                        never misses a beat.
+                        <span class="text">In the fast-paced world of global trade, timing is everything.</span>
+                        <span class="text">With our logistics expertise, we don't just deliver goods —</span>
+                        <span class="text">we deliver peace of mind. From precise coordination to</span>
+                        <span class="text">lightning-fast execution, we are your go-to logistics partner</span>
+                        <span class="text">that makes sure your supply chain never misses a beat.</span>
                     </p>
                 </div>
             </div>
@@ -1428,7 +251,10 @@ hr {
     <!-- 4. Tailored Solutions -->
     <section class="tailored-section">
         <div class="left-section">
-            <h2 class="tailored-heading">Tailored solutions<br>for your needs</h2>
+            <h2 class="tailored-heading">
+                <span class="heading">Tailored solutions</span>
+                <span class="heading">for your needs</span>
+            </h2>
             <div class="t-grey-box">
                 <img src="tailored2_img.jpg" alt="" class="tailored-image">
             </div>
@@ -1491,11 +317,14 @@ hr {
 <section class="real-time-tracking">
     <div class="container real">
         <div class="tracking-header">
-            <h2 class="tracking-title">Real-time tracking,<br>Stay in control</h2>
+            <h2 class="tracking-title">
+                <span class="heading">Real-time tracking,</span>
+                <span class="heading">Stay in control</span>
+            </h2>
             <p class="tracking-content">
-                Monitor your shipments at<br>
-                every stage with our advanced<br>
-                tracking system.
+                <span class="text">Monitor your shipments at</span>
+                <span class="text">every stage with our advanced</span>
+                <span class="text">tracking system.</span>
             </p>
         </div>
 
@@ -1516,22 +345,22 @@ hr {
 
     <!-- 6. Eco-logistics -->
     <section class="eco-partner">
-        <div class="container eco">
+        <div class="container eco-container">
             <div class="row align-items-center">
                 <div class="col-lg-6 e-content-column">
                     <h2 class="eco-heading">
-                        Eco-logistics:<br>
-                        Delivering for<br>
-                        you and the<br>
-                        planet
+                        <span class="heading">Eco-logistics:</span>
+                        <span class="heading">Delivering for</span>
+                        <span class="heading">you and the</span>
+                        <span class="heading">planet</span>
                     </h2>
                     <p class="eco-text">
-                        We don’t just move products — we move toward<br>
-                        a greener future. Our eco-friendly solutions help<br>
-                        reduce your carbon footprint with optimized<br>
-                        routes, energy-efficient vehicles, and<br>
-                        sustainable warehousing. Better for the planet,<br>
-                        better for your brand.
+                        <span class="text">We don’t just move products — we move toward</span>
+                        <span class="text">a greener future. Our eco-friendly solutions help</span>
+                        <span class="text">reduce your carbon footprint with optimized</span>
+                        <span class="text">routes, energy-efficient vehicles, and</span>
+                        <span class="text">sustainable warehousing. Better for the planet,</span>
+                        <span class="text">better for your brand.</span>
                     </p>
                 </div>
                 <div class="col-lg-6 e-grey-box-column">
@@ -1545,8 +374,11 @@ hr {
 
     <!-- 7. Smart Logistics -->
     <section class="smart-logistics">
-        <div class="container smart">
-            <h2 class="smart-heading">Smart Logistics<br>For Every Industry</h2>
+        <div class="container smart-container">
+            <h2 class="smart-heading">
+                <span class="heading">Smart Logistics</span>
+                <span class="heading">For Every Industry</span>
+            </h2>
     
             <div class="cards-container">
                 <div class="card">
@@ -1587,7 +419,7 @@ hr {
 
 
     <section class="trusted-partner">
-        <div class="container trust">
+        <div class="container trust-container">
             <div class="row align-items-center">
                 <div class="col-lg-6 t-grey-box-column">
                     <div class="trust-grey-box">
@@ -1597,29 +429,32 @@ hr {
                 
                 <div class="col-lg-6 t-content-column">
                     <h2 class="trusted-heading">
-                        Your trusted<br>
-                        partner,<br>
-                        Anywhere in<br>
-                        the world
+                        <span class="heading">Your trusted</span>
+                        <span class="heading">partner,</span>
+                        <span class="heading">Anywhere in</span>
+                        <span class="heading">the world</span>
                     </h2>
                     <p class="trusted-text">
-                        We don’t just move products — we move toward<br>
-                        a greener future. Our eco-friendly solutions help<br>
-                        reduce your carbon footprint with optimized<br>
-                        routes, energy-efficient vehicles, and<br>
-                        sustainable warehousing. Better for the planet,<br>
-                        better for your brand.
+                        <span class="text">We don’t just move products — we move toward</span>
+                        <span class="text">a greener future. Our eco-friendly solutions help</span>
+                        <span class="text">reduce your carbon footprint with optimized</span>
+                        <span class="text">routes, energy-efficient vehicles, and</span>
+                        <span class="text">sustainable warehousing. Better for the planet,</span>
+                        <span class="text">better for your brand.</span>
                     </p>
                 </div>
             </div>
         </div>
-    </section>
+    </section>    
     
     
     <!-- 8. FAQ Section -->
 <section class="faq-section">
-    <div class="container faq">
-        <h2 class="faq-heading">Have Questions?<br>We’ve Got Answers</h2>
+    <div class="container faq-container">
+        <h2 class="faq-heading">
+            <span class="heading">Have Questions?</span> 
+            <span class="heading">We’ve Got Answers</span>
+        </h2>
         
         <div class="faq-box open">
             <div class="faq-question">
@@ -1658,116 +493,75 @@ hr {
 </section>
 
 
-    <!-- 9. Footer -->
-    <footer class="footer">
-        <div class="container foot">
-            <div class="d-flex justify-content-between align-items-center c-border-bottom">
-                <div class="d-flex align-items-center">
-                    <img src="boat-outline.svg" alt="" class="me-2">
-                    <h5 class="text-white mb-0">CargoLog</h5>
-                </div>
-                <div class="text-white fs-5">info@cargolog.com</div>
+<!-- 9. Footer -->
+<footer class="footer">
+    <div class="container foot-container">
+        <div class="d-flex justify-content-between align-items-center c-border-bottom">
+            <div class="d-flex align-items-center">
+                <img src="boat-outline.svg" alt="" class="me-2">
+                <h5 class="text-white mb-0">CargoLog</h5>
             </div>
-    
+            <div class="text-white fs-5">info@cargolog.com</div>
+        </div>
 
-            <div class="row p1">
-                <div class="col-lg-3">
-                    <p class="c-text-muted">With our logistics expertise, we don't just deliver goods — we deliver peace of mind.</p>
-                    <a href="#" class="text-white tw learn-more">Learn more</a>
-                </div>
-    
-                <div class="col-lg-3">
-                    <h6 class="text-white tw mb-3">Navigations</h6>
-                    <ul class="list-unstyled c-text-muted p2">
-                        <li><a href="#" class="c-text-muted text-decoration-none">Home</a></li>
-                        <li><a href="#" class="c-text-muted text-decoration-none">Services</a></li>
-                        <li><a href="#" class="c-text-muted text-decoration-none">Company</a></li>
-                        <li><a href="#" class="c-text-muted text-decoration-none">Features</a></li>
-                        <li><a href="#" class="c-text-muted text-decoration-none">News</a></li>
-                        <li><a href="#" class="c-text-muted text-decoration-none">Contact</a></li>
-                    </ul>
-                </div>
-    
 
-                <div class="col-lg-3">
-                    <h6 class="text-white tw mb-3">About us</h6>
-                    <ul class="list-unstyled c-text-muted">
-                        <li><a href="#" class="c-text-muted text-decoration-none">Our company</a></li>
-                        <li><a href="#" class="c-text-muted text-decoration-none">Our mission</a></li>
-                        <li><a href="#" class="c-text-muted text-decoration-none">Careers</a></li>
-                        <li><a href="#" class="c-text-muted text-decoration-none">Blog</a></li>
-                        <li><a href="#" class="c-text-muted text-decoration-none">Press releases</a></li>
-                    </ul>
-                </div>
-                
-                <div class="col-lg-3">
-                    <h6 class="text-white tw mb-3">Subscribe newsletter</h6>
-                    <p class="c-text-muted">Stay updated with the latest news and offers!</p>
-                    <div class="input-group f-group">
-                        <input type="email" class="form-control email-input" placeholder="Email address">
-                        <span class="input-group-text i-g-t bg-transparent border-start-0">
-                            <img src="Icon arrow left.svg" alt="" class="arrow-icon">
-                        </span>
-                    </div>
-                </div>
+        <div class="row p1">
+            <div class="col-lg-3">
+                <p class="c-text-muted">With our logistics expertise, we don't just deliver goods — we deliver peace of mind.</p>
+                <a href="#" class="text-white text-weight learn-more">Learn more</a>
             </div>
 
-            <div class="d-flex justify-content-between align-items-center p4">
-                <p class="c-text-muted mb-0">Copyright © SocioLib 2024</p>
-                <div class="social-icons">
-                    <!-- <img src="Footer Social Media.svg" alt="" class="me-3 social-icon "> -->
-                    <i class="fa-brands me-3 i_class fa-instagram"></i>
-                    <i class="fa-brands me-3 i_class fa-facebook"></i>
-                    <i class="fa-brands me-3 i_class fa-youtube"></i>
-                    <i class="fa-brands me-3 i_class fa-tiktok"></i>
+            <div class="col-lg-3 navigation-column">
+                <h6 class="text-white text-weight mb-3">Navigations</h6>
+                <ul class="list-unstyled c-text-muted p2">
+                    <li><a href="#" class="c-text-muted text-decoration-none">Home</a></li>
+                    <li><a href="#" class="c-text-muted text-decoration-none">Services</a></li>
+                    <li><a href="#" class="c-text-muted text-decoration-none">Company</a></li>
+                    <li><a href="#" class="c-text-muted text-decoration-none">Features</a></li>
+                    <li><a href="#" class="c-text-muted text-decoration-none">News</a></li>
+                    <li><a href="#" class="c-text-muted text-decoration-none">Contact</a></li>
+                </ul>
+            </div>
+
+
+            <div class="col-lg-3 aboutus-column">
+                <h6 class="text-white text-weight mb-3">About us</h6>
+                <ul class="list-unstyled c-text-muted">
+                    <li><a href="#" class="c-text-muted text-decoration-none">Our company</a></li>
+                    <li><a href="#" class="c-text-muted text-decoration-none">Our mission</a></li>
+                    <li><a href="#" class="c-text-muted text-decoration-none">Careers</a></li>
+                    <li><a href="#" class="c-text-muted text-decoration-none">Blog</a></li>
+                    <li><a href="#" class="c-text-muted text-decoration-none">Press releases</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-lg-3">
+                <h6 class="text-white text-weight mb-3">Subscribe newsletter</h6>
+                <p class="c-text-muted">Stay updated with the latest news and offers!</p>
+                <div class="input-group f-group">
+                    <input type="email" class="form-control email-input" placeholder="Email address">
+                    <span class="input-group-text footer-input-group-txt bg-transparent border-start-0">
+                        <!-- <img src="Icon arrow left.svg" alt="" class="arrow-icon"> -->
+                        <i class="fa-solid fa-arrow-right arrow-icon"></i>
+                    </span>
                 </div>
             </div>
         </div>
-    </footer>
+
+        <div class="d-flex justify-content-between align-items-center padding">
+            <p class="c-text-muted mb-0">Copyright © SocioLib 2024</p>
+            <div class="social-icons">
+                <!-- <img src="Footer Social Media.svg" alt="" class="me-3 social-icon "> -->
+                <i class="fa-brands me-3 i_class fa-instagram"></i>
+                <i class="fa-brands me-3 i_class fa-facebook"></i>
+                <i class="fa-brands me-3 i_class fa-youtube"></i>
+                <i class="fa-brands me-3 i_class fa-tiktok"></i>
+            </div>
+        </div>
+    </div>
+</footer>   
     
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-document.querySelectorAll('.faq-question').forEach(item => {
-    item.addEventListener('click', () => {
-        let parent = item.parentElement;
-        let icon = item.querySelector('.toggle-icon');
-
-        if (parent.classList.contains('open')) {
-            parent.classList.remove('open');
-            icon.textContent = '+';
-        } else {
-            parent.classList.add('open');
-            icon.textContent = '−';
-
-            let answerBox = parent.querySelector('.faq-answer');
-            if (!answerBox) {
-                let newAnswerBox = document.createElement('div');
-                newAnswerBox.classList.add('faq-answer');
-                newAnswerBox.style.marginTop = '10px';
-                newAnswerBox.style.textAlign = 'left';
-
-                let input = document.createElement('textarea');
-                input.placeholder = 'Type your answer here...';
-                input.style.width = '100%';
-                input.style.padding = '8px';
-                input.style.fontSize = '16px';
-
-                newAnswerBox.appendChild(input);
-                parent.appendChild(newAnswerBox);
-            }
-        }
-    });
-});
-
-function switchTab(event, tabId) {
-        document.querySelectorAll('.tab-content').forEach(tab => tab.style.display = 'none');
-        document.getElementById(tabId).style.display = 'block';
-        
-        document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
-        event.currentTarget.classList.add('active');
-    }
-
-    </script>
+<script src="web.js"></script>    
 </body>
 </html>
