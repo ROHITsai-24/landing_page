@@ -1269,6 +1269,17 @@ flex: 1;
 min-width: 45%;
 } */
 
+.navigation-column,
+    .aboutus-column {
+        flex: 1;
+        min-width: 45%; 
+    }
+
+
+.navigation-column .aboutus-column {
+    flex: 1;
+    min-width: 45%;
+}    
 .footer .text-weight {
 font-size: 16px;
 }
@@ -1305,17 +1316,4 @@ padding-top: 15px;
 }
 }
 
-@media (max-width: 768px) {
-    .footer .row {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 20px;
-    }
 
-    .navigation-column,
-    .aboutus-column {
-        flex: 1;
-        min-width: 45%; 
-    }
-}
