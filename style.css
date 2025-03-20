@@ -1197,7 +1197,7 @@ order: 2;
     border-bottom: 1px solid var(--footer-border);
 }
 
-.p1 {
+.row-padding {
     padding-top: 50px;
 }
 
@@ -1224,7 +1224,7 @@ order: 2;
     height: 40px;
 }
 
-.padding {
+.social-padding {
     padding-top: 30px;
 }
 
@@ -1252,7 +1252,7 @@ padding: 30px 20px 15px;
 padding-bottom: 20px; 
 }
 
-.p1 {
+.row-padding {
 padding-top: 20px; 
 }
 
@@ -1311,7 +1311,7 @@ font-size: 18px;
 margin-right: 10px;
 }
 
-.padding {
+.social-padding {
 padding-top: 15px; 
 }
 }
