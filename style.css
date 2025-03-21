@@ -1254,7 +1254,7 @@ order: 2;
 }
 @media (max-width: 768px) {
 .footer {
-padding: 30px 20px 15px; 
+padding: 30px 0px 15px; 
 }
 
 .c-border-bottom {
