@@ -48,175 +48,187 @@
     
     
 
-
-
-<section class="tabbed-input-section">
-    <div class="container container-tab">
-        <ul class="nav nav-tabs tab-nav" id="tabMenu">
-            <li class="nav-item">
-                <button class="nav-link active tab" data-bs-toggle="tab" data-bs-target="#shipping-rate">Shipping rate</button>
-            </li>
-            <li class="nav-item">
-                <button class="nav-link tab" data-bs-toggle="tab" data-bs-target="#tracking">Tracking</button>
-            </li>
-            <li class="nav-item">
-                <button class="nav-link tab" data-bs-toggle="tab" data-bs-target="#drop-point">Drop point</button>
-            </li>
-        </ul>
-
-        <div class="tab-content">
-            <!-- Shipping Rate Tab -->
-            <div class="tab-pane fade show active" id="shipping-rate">
-                <div class="input-group input-tab">
-                    <div class="input-wrapper">
-                        <label>From</label>
-                        <div class="input-icon-container">
-                            <span class="icon">
-                                <img src="location.svg" alt="">
-                            </span>
-                            <input type="text" placeholder="Choose location" class="location-icon">
+    <section class="tabbed-input-section">
+        <div class="container container-tab">
+            <ul class="nav nav-tabs tab-nav" id="tabMenu">
+                <li class="nav-item">
+                    <button class="nav-link active tab" data-bs-toggle="tab" data-bs-target="#shipping-rate">Shipping rate</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link tab" data-bs-toggle="tab" data-bs-target="#tracking">Tracking</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link tab" data-bs-toggle="tab" data-bs-target="#drop-point">Drop point</button>
+                </li>
+            </ul>
+    
+            <div class="tab-content">
+                <!-- Shipping Rate Tab -->
+                <div class="tab-pane fade show active" id="shipping-rate">
+                    <div class="input-group input-tab">
+                        <div class="input-wrapper">
+                            <label>From</label>
+                            <div class="input-icon-container">
+                                <span class="icon">
+                                    <img src="location.svg" alt="">
+                                </span>
+                                <input type="text" id="from-shipping" placeholder="Choose location">
+                            </div>
+                        </div>
+                        <div class="input-wrapper">
+                            <label>To</label>
+                            <div class="input-icon-container">
+                                <span class="icon">
+                                    <img src="location.svg" alt="">
+                                </span>
+                                <input type="text" id="to-shipping" placeholder="Choose location">
+                            </div>
+                        </div>  
+                    </div>
+    
+                    <div class="input-group input-tab">
+                        <div class="input-wrapper weight">
+                            <label>Weight</label>
+                            <div class="input-icon-container">
+                                <span class="icon">
+                                    <img src="package.svg" alt="">
+                                </span>
+                                <input type="text" id="weight-shipping" placeholder="Enter weight">
+                                <span class="unit">Kg</span>
+                            </div>
+                        </div>
+                        <div class="input-wrapper">
+                            <label>Volume</label>
+                            <div class="input-icon-container">
+                                <input type="text" id="length-shipping" placeholder="Length">
+                                <span class="unit">Cm</span>
+                            </div>
+                        </div>
+                        <div class="input-wrapper">
+                            <label class="hidden-label">Volume</label> 
+                            <div class="input-icon-container">
+                                <input type="text" id="width-shipping" placeholder="Width">
+                                <span class="unit">Cm</span>
+                            </div>
+                        </div>
+                        <div class="input-wrapper">
+                            <label class="hidden-label">Volume</label> 
+                            <div class="input-icon-container">
+                                <input type="text" id="height-shipping" placeholder="Height">
+                                <span class="unit">Cm</span>
+                            </div>
+                        </div>
+                        <div class="input-wrapper bttn">
+                            <label class="hidden-label">Button</label> 
+                            <button class="search-btn">Search</button>
                         </div>
                     </div>
-                    <div class="input-wrapper">
-                        <label>To</label>
-                        <div class="input-icon-container">
-                            <span class="icon">
-                                <img src="location.svg" alt="">
-                            </span>
-                            <input type="text" placeholder="Choose location" class="location-icon">
+                </div>  
+    
+                <!-- Tracking Tab -->
+                <div class="tab-pane fade" id="tracking">
+                    <div class="input-group input-tab">
+                        <div class="input-wrapper">
+                            <label>From</label>
+                            <div class="input-icon-container">
+                                <span class="icon">
+                                    <img src="location.svg" alt="">
+                                </span>
+                                <input type="text" id="from-tracking" placeholder="Choose location">
+                            </div>
                         </div>
-                    </div>  
+                        <div class="input-wrapper">
+                            <label>To</label>
+                            <div class="input-icon-container">
+                                <span class="icon">
+                                    <img src="location.svg" alt="">
+                                </span>
+                                <input type="text" id="to-tracking" placeholder="Choose location">
+                            </div>
+                        </div>  
+                    </div>
+    
+                    <div class="input-group input-tab">
+                        <div class="input-wrapper weight">
+                            <label>Weight</label>
+                            <div class="input-icon-container">
+                                <span class="icon">
+                                    <img src="package.svg" alt="">
+                                </span>
+                                <input type="text" id="weight-tracking" placeholder="Enter weight">
+                                <span class="unit">Kg</span>
+                            </div>
+                        </div>
+                        <div class="input-wrapper">
+                            <label>Volume</label>
+                            <div class="input-icon-container">
+                                <input type="text" id="length-tracking" placeholder="Length">
+                                <span class="unit">Cm</span>
+                            </div>
+                        </div>
+                        <div class="input-wrapper bttn">
+                            <label class="hidden-label">Button</label> 
+                            <button class="search-btn">Search</button>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="input-group input-tab">
-                    <div class="input-wrapper weight">
-                        <label>Weight</label>
-                        <div class="input-icon-container">
-                            <span class="icon">
-                                <img src="package.svg" alt="">
-                            </span>
-                            <input type="text" placeholder="Enter weight" class="weight-icon">
-                            <span class="unit u-kg">Kg</span>
+    
+                <!-- Drop Point Tab -->
+                <div class="tab-pane fade" id="drop-point">
+                    <div class="input-group input-tab">
+                        <div class="input-wrapper">
+                            <label>From</label>
+                            <div class="input-icon-container">
+                                <span class="icon">
+                                    <img src="location.svg" alt="">
+                                </span>
+                                <input type="text" id="from-drop" placeholder="Choose location">
+                            </div>
                         </div>
+                        <div class="input-wrapper">
+                            <label>To</label>
+                            <div class="input-icon-container">
+                                <span class="icon">
+                                    <img src="location.svg" alt="">
+                                </span>
+                                <input type="text" id="to-drop" placeholder="Choose location">
+                            </div>
+                        </div>  
                     </div>
-                    <div class="input-wrapper">
-                        <label>Volume</label>
-                        <input type="text" placeholder="Length">
-                        <span class="unit">Cm</span>
-                    </div>
-                    <div class="input-wrapper">
-                        <label class="hidden-label">Volume</label> 
-                        <input type="text" placeholder="Width">
-                        <span class="unit">Cm</span>
-                    </div>
-                    <div class="input-wrapper">
-                        <label class="hidden-label">Volume</label> 
-                        <input type="text" placeholder="Height">
-                        <span class="unit">Cm</span>
-                    </div>
-                    <div class="input-wrapper bttn">
-                        <label class="hidden-label">Button</label> 
-                        <button class="search-btn">Search</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Tracking Tab -->
-            <div class="tab-pane fade" id="tracking">
-                <div class="input-group input-tab">
-                    <div class="input-wrapper">
-                        <label>From</label>
-                        <div class="input-icon-container">
-                            <span class="icon">
-                                <img src="location.svg" alt="">
-                            </span>
-                            <input type="text" placeholder="Choose location" class="location-icon">
+    
+                    <div class="input-group input-tab">
+                        <div class="input-wrapper">
+                            <label>Volume</label>
+                            <div class="input-icon-container">
+                                <input type="text" id="length-drop" placeholder="Length">
+                                <span class="unit">Cm</span>
+                            </div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="input-group input-tab">
-                    <div class="input-wrapper weight">
-                        <label>Weight</label>
-                        <div class="input-icon-container">
-                            <span class="icon">
-                                <img src="package.svg" alt="">
-                            </span>
-                            <input type="text" placeholder="Enter weight" class="weight-icon">
-                            <span class="unit u-kg">Kg</span>
+                        <div class="input-wrapper">
+                            <label class="hidden-label">Volume</label> 
+                            <div class="input-icon-container">
+                                <input type="text" id="width-drop" placeholder="Width">
+                                <span class="unit">Cm</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="input-wrapper">
-                        <label>Volume</label>
-                        <input type="text" placeholder="Length">
-                        <span class="unit">Cm</span>
-                    </div>
-                    <div class="input-wrapper">
-                        <label class="hidden-label">Volume</label> 
-                        <input type="text" placeholder="Width">
-                        <span class="unit">Cm</span>
-                    </div>
-                    <div class="input-wrapper">
-                        <label class="hidden-label">Volume</label> 
-                        <input type="text" placeholder="Height">
-                        <span class="unit">Cm</span>
-                    </div>
-                    <div class="input-wrapper bttn">
-                        <label class="hidden-label">Button</label> 
-                        <button class="search-btn">Search</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Drop Point Tab -->
-            <div class="tab-pane fade" id="drop-point">
-                <div class="input-group input-tab">
-                    <div class="input-wrapper">
-                        <label>From</label>
-                        <div class="input-icon-container">
-                            <span class="icon">
-                                <img src="location.svg" alt="">
-                            </span>
-                            <input type="text" placeholder="Choose location" class="location-icon">
+                        <div class="input-wrapper">
+                            <label class="hidden-label">Volume</label> 
+                            <div class="input-icon-container">
+                                <input type="text" id="height-drop" placeholder="Height">
+                                <span class="unit">Cm</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="input-wrapper">
-                        <label>To</label>
-                        <div class="input-icon-container">
-                            <span class="icon">
-                                <img src="location.svg" alt="">
-                            </span>
-                            <input type="text" placeholder="Choose location" class="location-icon">
+                        <div class="input-wrapper bttn">
+                            <label class="hidden-label">Button</label> 
+                            <button class="search-btn">Search</button>
                         </div>
-                    </div>  
-                </div>
-
-                <div class="input-group input-tab">
-                    <div class="input-wrapper weight">
-                        <label>Weight</label>
-                        <div class="input-icon-container">
-                            <span class="icon">
-                                <img src="package.svg" alt="">
-                            </span>
-                            <input type="text" placeholder="Enter weight" class="weight-icon">
-                            <span class="unit u-kg">Kg</span>
-                        </div>
-                    </div>
-                    <div class="input-wrapper">
-                        <label>Volume</label>
-                        <input type="text" placeholder="Length">
-                        <span class="unit">Cm</span>
-                    </div>
-                    <div class="input-wrapper bttn">
-                        <label class="hidden-label">Button</label> 
-                        <button class="search-btn">Search</button>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
+    </section>
+    
+    
 
     
 
