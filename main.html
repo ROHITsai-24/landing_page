@@ -13,316 +13,309 @@
 </head>
 <body>
     
-    <nav class="navbar navbar-expand-lg  navbar-dark">
-        <div class="container-fluid">
-            <div class="logo">
-                <img src="boat-outline.svg" alt="CargoLog Logo">
-                CargoLog
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Company</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">News</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-                </ul>
-            </div>
+<nav class="navbar navbar-expand-lg  navbar-dark">
+    <div class="container-fluid">
+        <div class="logo">
+            <img src="boat-outline.svg" alt="CargoLog Logo">
+            CargoLog
         </div>
-    </nav>
-    
-    
-    <section class="hero-section">
-        <div class="container n-hero">
-            <h1 class="hero-heading">
-                <span class="heading">Efficient logistics</span>
-                <span class="heading">solutions tailor<span class="outline-effect">e</span>d</span>
-                <span class="heading">to your ne<span class="square-cut">eds</span></span>
-            </h1>
-        </div>
-    </section>
-    
-    
-
-    <section class="tabbed-input-section">
-        <div class="container container-tab">
-            <ul class="nav nav-tabs tab-nav" id="tabMenu">
-                <li class="nav-item">
-                    <button class="nav-link active tab" data-bs-toggle="tab" data-bs-target="#shipping-rate">Shipping rate</button>
-                </li>
-                <li class="nav-item">
-                    <button class="nav-link tab" data-bs-toggle="tab" data-bs-target="#tracking">Tracking</button>
-                </li>
-                <li class="nav-item">
-                    <button class="nav-link tab" data-bs-toggle="tab" data-bs-target="#drop-point">Drop point</button>
-                </li>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Company</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
             </ul>
-    
-            <div class="tab-content">
-                <!-- Shipping Rate Tab -->
-                <div class="tab-pane fade show active" id="shipping-rate">
-                    <div class="input-group input-tab">
-                        <div class="input-wrapper">
-                            <label>From</label>
-                            <div class="input-icon-container">
-                                <span class="icon">
-                                    <img src="location.svg" alt="">
-                                </span>
-                                <input type="text" id="from-shipping" placeholder="Choose location">
-                            </div>
-                        </div>
-                        <div class="input-wrapper">
-                            <label>To</label>
-                            <div class="input-icon-container">
-                                <span class="icon">
-                                    <img src="location.svg" alt="">
-                                </span>
-                                <input type="text" id="to-shipping" placeholder="Choose location">
-                            </div>
-                        </div>  
-                    </div>
-    
-                    <div class="input-group input-tab">
-                        <div class="input-wrapper weight">
-                            <label>Weight</label>
-                            <div class="input-icon-container">
-                                <span class="icon">
-                                    <img src="package.svg" alt="">
-                                </span>
-                                <input type="text" id="weight-shipping" placeholder="Enter weight">
-                                <span class="unit">Kg</span>
-                            </div>
-                        </div>
-                        <div class="input-wrapper">
-                            <label>Volume</label>
-                            <div class="input-icon-container">
-                                <input type="text" id="length-shipping" placeholder="Length">
-                                <span class="unit">Cm</span>
-                            </div>
-                        </div>
-                        <div class="input-wrapper">
-                            <label class="hidden-label">Volume</label> 
-                            <div class="input-icon-container">
-                                <input type="text" id="width-shipping" placeholder="Width">
-                                <span class="unit">Cm</span>
-                            </div>
-                        </div>
-                        <div class="input-wrapper">
-                            <label class="hidden-label">Volume</label> 
-                            <div class="input-icon-container">
-                                <input type="text" id="height-shipping" placeholder="Height">
-                                <span class="unit">Cm</span>
-                            </div>
-                        </div>
-                        <div class="input-wrapper bttn">
-                            <label class="hidden-label">Button</label> 
-                            <button class="search-btn">Search</button>
-                        </div>
-                    </div>
-                </div>  
-    
-                <!-- Tracking Tab -->
-                <div class="tab-pane fade" id="tracking">
-                    <div class="input-group input-tab">
-                        <div class="input-wrapper">
-                            <label>From</label>
-                            <div class="input-icon-container">
-                                <span class="icon">
-                                    <img src="location.svg" alt="">
-                                </span>
-                                <input type="text" id="from-tracking" placeholder="Choose location">
-                            </div>
-                        </div>
-                        <div class="input-wrapper">
-                            <label>To</label>
-                            <div class="input-icon-container">
-                                <span class="icon">
-                                    <img src="location.svg" alt="">
-                                </span>
-                                <input type="text" id="to-tracking" placeholder="Choose location">
-                            </div>
-                        </div>  
-                    </div>
-    
-                    <div class="input-group input-tab">
-                        <div class="input-wrapper weight">
-                            <label>Weight</label>
-                            <div class="input-icon-container">
-                                <span class="icon">
-                                    <img src="package.svg" alt="">
-                                </span>
-                                <input type="text" id="weight-tracking" placeholder="Enter weight">
-                                <span class="unit">Kg</span>
-                            </div>
-                        </div>
-                        <div class="input-wrapper">
-                            <label>Volume</label>
-                            <div class="input-icon-container">
-                                <input type="text" id="length-tracking" placeholder="Length">
-                                <span class="unit">Cm</span>
-                            </div>
-                        </div>
-                        <div class="input-wrapper bttn">
-                            <label class="hidden-label">Button</label> 
-                            <button class="search-btn">Search</button>
-                        </div>
-                    </div>
-                </div>
-    
-                <!-- Drop Point Tab -->
-                <div class="tab-pane fade" id="drop-point">
-                    <div class="input-group input-tab">
-                        <div class="input-wrapper">
-                            <label>From</label>
-                            <div class="input-icon-container">
-                                <span class="icon">
-                                    <img src="location.svg" alt="">
-                                </span>
-                                <input type="text" id="from-drop" placeholder="Choose location">
-                            </div>
-                        </div>
-                        <div class="input-wrapper">
-                            <label>To</label>
-                            <div class="input-icon-container">
-                                <span class="icon">
-                                    <img src="location.svg" alt="">
-                                </span>
-                                <input type="text" id="to-drop" placeholder="Choose location">
-                            </div>
-                        </div>  
-                    </div>
-    
-                    <div class="input-group input-tab">
-                        <div class="input-wrapper">
-                            <label>Volume</label>
-                            <div class="input-icon-container">
-                                <input type="text" id="length-drop" placeholder="Length">
-                                <span class="unit">Cm</span>
-                            </div>
-                        </div>
-                        <div class="input-wrapper">
-                            <label class="hidden-label">Volume</label> 
-                            <div class="input-icon-container">
-                                <input type="text" id="width-drop" placeholder="Width">
-                                <span class="unit">Cm</span>
-                            </div>
-                        </div>
-                        <div class="input-wrapper">
-                            <label class="hidden-label">Volume</label> 
-                            <div class="input-icon-container">
-                                <input type="text" id="height-drop" placeholder="Height">
-                                <span class="unit">Cm</span>
-                            </div>
-                        </div>
-                        <div class="input-wrapper bttn">
-                            <label class="hidden-label">Button</label> 
-                            <button class="search-btn">Search</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
-    </section>
+    </div>
+</nav>
+    
+    
+<section class="hero-section">
+    <div class="container n-hero">
+        <h1 class="hero-heading">
+            <span class="heading">Efficient logistics</span>
+            <span class="heading">solutions tailor<span class="outline-effect">e</span>d</span>
+           <span class="heading">to your ne<span class="square-cut">eds</span></span>
+        </h1>
+    </div>
+</section>
     
     
 
+<section class="tabbed-input-section">
+    <div class="container container-tab">
+        <ul class="nav nav-tabs tab-nav" id="tabMenu">
+            <li class="nav-item">
+                <button class="nav-link active tab" data-bs-toggle="tab" data-bs-target="#shipping-rate">Shipping rate</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link tab" data-bs-toggle="tab" data-bs-target="#tracking">Tracking</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link tab" data-bs-toggle="tab" data-bs-target="#drop-point">Drop point</button>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+            <!-- Shipping Rate Tab -->
+            <div class="tab-pane fade show active" id="shipping-rate">
+                <div class="input-group input-tab">
+                    <div class="input-wrapper">
+                        <label>From</label>
+                        <div class="input-icon-container">
+                            <span class="icon">
+                                <img src="location.svg" alt="">
+                            </span>
+                            <input type="text" id="from-shipping" placeholder="Choose location">
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <label>To</label>
+                        <div class="input-icon-container">
+                            <span class="icon">
+                                <img src="location.svg" alt="">
+                            </span>
+                            <input type="text" id="to-shipping" placeholder="Choose location">
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="input-group input-tab">
+                    <div class="input-wrapper weight">
+                        <label>Weight</label>
+                        <div class="input-icon-container">
+                            <span class="icon">
+                                <img src="package.svg" alt="">
+                            </span>
+                            <input type="text" id="weight-shipping" placeholder="Enter weight">
+                            <span class="unit">Kg</span>
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <label>Volume</label>
+                        <div class="input-icon-container">
+                            <input type="text" id="length-shipping" placeholder="Length">
+                            <span class="unit">Cm</span>
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <label class="hidden-label">Volume</label> 
+                        <div class="input-icon-container">
+                            <input type="text" id="width-shipping" placeholder="Width">
+                            <span class="unit">Cm</span>
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <label class="hidden-label">Volume</label> 
+                        <div class="input-icon-container">
+                            <input type="text" id="height-shipping" placeholder="Height">
+                            <span class="unit">Cm</span>
+                        </div>
+                    </div>
+                    <div class="input-wrapper bttn">
+                        <label class="hidden-label">Button</label> 
+                        <button class="search-btn">Search</button>
+                    </div>
+                </div>
+            </div>  
+
+            <!-- Tracking Tab -->
+            <div class="tab-pane fade" id="tracking">
+                <div class="input-group input-tab">
+                    <div class="input-wrapper">
+                        <label>From</label>
+                        <div class="input-icon-container">
+                            <span class="icon">
+                                <img src="location.svg" alt="">
+                            </span>
+                            <input type="text" id="from-tracking" placeholder="Choose location">
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <label>To</label>
+                        <div class="input-icon-container">
+                            <span class="icon">
+                                <img src="location.svg" alt="">
+                            </span>
+                            <input type="text" id="to-tracking" placeholder="Choose location">
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="input-group input-tab">
+                    <div class="input-wrapper weight">
+                        <label>Weight</label>
+                        <div class="input-icon-container">
+                            <span class="icon">
+                                <img src="package.svg" alt="">
+                            </span>
+                            <input type="text" id="weight-tracking" placeholder="Enter weight">
+                            <span class="unit">Kg</span>
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <label>Volume</label>
+                        <div class="input-icon-container">
+                            <input type="text" id="length-tracking" placeholder="Length">
+                            <span class="unit">Cm</span>
+                        </div>
+                    </div>
+                    <div class="input-wrapper bttn">
+                        <label class="hidden-label">Button</label> 
+                        <button class="search-btn">Search</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Drop Point Tab -->
+            <div class="tab-pane fade" id="drop-point">
+                <div class="input-group input-tab">
+                    <div class="input-wrapper">
+                        <label>From</label>
+                        <div class="input-icon-container">
+                            <span class="icon">
+                                <img src="location.svg" alt="">
+                            </span>
+                            <input type="text" id="from-drop" placeholder="Choose location">
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <label>To</label>
+                        <div class="input-icon-container">
+                            <span class="icon">
+                                <img src="location.svg" alt="">
+                            </span>
+                            <input type="text" id="to-drop" placeholder="Choose location">
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="input-group input-tab">
+                    <div class="input-wrapper">
+                        <label>Volume</label>
+                        <div class="input-icon-container">
+                            <input type="text" id="length-drop" placeholder="Length">
+                            <span class="unit">Cm</span>
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <label class="hidden-label">Volume</label> 
+                        <div class="input-icon-container">
+                            <input type="text" id="width-drop" placeholder="Width">
+                            <span class="unit">Cm</span>
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <label class="hidden-label">Volume</label> 
+                        <div class="input-icon-container">
+                            <input type="text" id="height-drop" placeholder="Height">
+                            <span class="unit">Cm</span>
+                        </div>
+                    </div>
+                    <div class="input-wrapper bttn">
+                        <label class="hidden-label">Button</label> 
+                        <button class="search-btn">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+<!-- 3. Logistics section -->
+<section class="logistic-partner">
+    <div class="container logistic">
+        <div class="row align-items-center">
+            <div class="col-lg-6 l-grey-box-column">
+                <div class="logistic-grey-box">
+                    <img src="logistic2_img.jpg" alt="" class="logistic-image">
+                </div>
+            </div>
+            
+            <div class="col-lg-6 l-content-column">
+                <h2 class="logistic-heading">
+                    <span class="heading">Logistics that</span>
+                    <span class="heading">move your</span>
+                    <span class="heading">business</span>
+                </h2>
+                <p class="logistic-text">
+                    In the fast-paced world of global trade, timing is everything. With our
+                    logistics expertise, we don't just deliver goods — we deliver peace of mind. From precise coordination to lightning-fast
+                    execution, we are your go-to logistics partner that makes sure your supply chain never misses a beat.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 4. Tailored Solutions -->
+<section class="tailored-section">
+<div class="left-section">
+        <h2 class="tailored-heading">
+            <span class="heading">Tailored solutions</span>
+            <span class="heading">for your needs</span>
+        </h2>
+        <div class="t-grey-box">
+            <img src="tailored2_img.jpg" alt="" class="tailored-image">
+        </div>
+    </div>
+    
+    <div class="right-section">
+        <div class="service-list">
+            <div class="service-item">
+                <span class="number">001</span>
+                <div class="service-content">
+                    <h3 class="service-title">Freight forwarding</h3>
+                    <p class="service-text">Fast and cost-effective transport.</p>
+                </div>
+            </div>
+            <hr>
+
+            <div class="service-item">
+                <span class="number">002</span>
+                <div class="service-content">
+                    <h3 class="service-title">Warehousing</h3>
+                    <p class="service-text">Organized, efficient storage.</p>
+                </div>
+            </div>
+            <hr>
+
+            <div class="service-item">
+                <span class="number">003</span>
+                <div class="service-content">
+                    <h3 class="service-title">Customs clearance</h3>
+                    <p class="service-text">Smooth international processing.</p>
+                </div>
+            </div>
+            <hr>
+
+            <div class="service-item">
+                <span class="number">004</span>
+                <div class="service-content">
+                    <h3 class="service-title">Last-mile delivery</h3>
+                    <p class="service-text">Fast delivery to customers.</p>
+                </div>
+            </div>
+            <hr>
+
+            <div class="service-item">
+                <span class="number">005</span>
+                <div class="service-content">
+                    <h3 class="service-title">Supply chain consulting</h3>
+                    <p class="service-text">Optimized logistics strategies.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
     
 
-    <!-- 3. Logistics section -->
-    <section class="logistic-partner">
-        <div class="container logistic">
-            <div class="row align-items-center">
-                <div class="col-lg-6 l-grey-box-column">
-                    <div class="logistic-grey-box">
-                        <img src="logistic2_img.jpg" alt="" class="logistic-image">
-                    </div>
-                </div>
-                
-                <div class="col-lg-6 l-content-column">
-                    <h2 class="logistic-heading">
-                        <span class="heading">Logistics that</span>
-                        <span class="heading">move your</span>
-                        <span class="heading">business</span>
-                    </h2>
-                    <p class="logistic-text">
-                        In the fast-paced world of global trade, timing is everything. With our
-                        logistics expertise, we don't just deliver goods — we deliver peace of mind. From precise coordination to lightning-fast
-                        execution, we are your go-to logistics partner that makes sure your supply chain never misses a beat.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 4. Tailored Solutions -->
-    <section class="tailored-section">
-        <div class="left-section">
-            <h2 class="tailored-heading">
-                <span class="heading">Tailored solutions</span>
-                <span class="heading">for your needs</span>
-            </h2>
-            <div class="t-grey-box">
-                <img src="tailored2_img.jpg" alt="" class="tailored-image">
-            </div>
-        </div>
-        
-        <div class="right-section">
-            <div class="service-list">
-                <div class="service-item">
-                    <span class="number">001</span>
-                    <div class="service-content">
-                        <h3 class="service-title">Freight forwarding</h3>
-                        <p class="service-text">Fast and cost-effective transport.</p>
-                    </div>
-                </div>
-                <hr>
-    
-                <div class="service-item">
-                    <span class="number">002</span>
-                    <div class="service-content">
-                        <h3 class="service-title">Warehousing</h3>
-                        <p class="service-text">Organized, efficient storage.</p>
-                    </div>
-                </div>
-                <hr>
-    
-                <div class="service-item">
-                    <span class="number">003</span>
-                    <div class="service-content">
-                        <h3 class="service-title">Customs clearance</h3>
-                        <p class="service-text">Smooth international processing.</p>
-                    </div>
-                </div>
-                <hr>
-    
-                <div class="service-item">
-                    <span class="number">004</span>
-                    <div class="service-content">
-                        <h3 class="service-title">Last-mile delivery</h3>
-                        <p class="service-text">Fast delivery to customers.</p>
-                    </div>
-                </div>
-                <hr>
-    
-                <div class="service-item">
-                    <span class="number">005</span>
-                    <div class="service-content">
-                        <h3 class="service-title">Supply chain consulting</h3>
-                        <p class="service-text">Optimized logistics strategies.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    
-    
-    
-    
 <!-- Real-time Tracking Section -->
 <section class="real-time-tracking">
     <div class="container real">
@@ -353,105 +346,103 @@
 
     
 
-    <!-- 6. Eco-logistics -->
-    <section class="eco-partner">
-        <div class="container eco-container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 e-content-column">
-                    <h2 class="eco-heading">
-                        <span class="heading">Eco-logistics:</span>
-                        <span class="heading">Delivering for</span>
-                        <span class="heading">you and the</span>
-                        <span class="heading">planet</span>
-                    </h2>
-                    <p class="eco-text">
-                        We don’t just move products — we move toward a greener future. Our eco-friendly solutions
-                        help reduce your carbon footprint with optimized routes, energy-efficient vehicles, 
-                        and sustainable warehousing. Better for the planet, better for your brand.
-                    </p>
-                </div>
-                <div class="col-lg-6 e-grey-box-column">
-                    <div class="e-grey-box">
-                        <img src="eco_img.jpg" alt="" class="eco-image">
-                    </div>
+<!-- 6. Eco-logistics -->
+<section class="eco-partner">
+    <div class="container eco-container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 e-content-column">
+                <h2 class="eco-heading">
+                    <span class="heading">Eco-logistics:</span>
+                    <span class="heading">Delivering for</span>
+                    <span class="heading">you and the</span>
+                    <span class="heading">planet</span>
+                </h2>
+                <p class="eco-text">
+                    We don’t just move products — we move toward a greener future. Our eco-friendly solutions
+                    help reduce your carbon footprint with optimized routes, energy-efficient vehicles, 
+                    and sustainable warehousing. Better for the planet, better for your brand.
+                </p>
+            </div>
+            <div class="col-lg-6 e-grey-box-column">
+                <div class="e-grey-box">
+                    <img src="eco_img.jpg" alt="" class="eco-image">
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- 7. Smart Logistics -->
-    <section class="smart-logistics">
-        <div class="container smart-container">
-            <h2 class="smart-heading">
-                <span class="heading">Smart Logistics</span>
-                <span class="heading">For Every Industry</span>
-            </h2>
-    
-            <div class="cards-container">
-                <div class="card">
-                    <div class="icon-circle">
-                        <img src="merchant.svg" alt="E-commerce">
-                    </div>
-                    <h3 class="card-title">E-commerce</h3>
-                    <p class="card-content">Fast, flexible delivery that keeps your customers smiling and your stock moving.</p>
+<!-- 7. Smart Logistics -->
+<section class="smart-logistics">
+    <div class="container smart-container">
+        <h2 class="smart-heading">
+            <span class="heading">Smart Logistics</span>
+            <span class="heading">For Every Industry</span>
+        </h2>
+
+        <div class="cards-container">
+            <div class="card">
+                <div class="icon-circle">
+                    <img src="merchant.svg" alt="E-commerce">
                 </div>
-    
-                <div class="card">
-                    <div class="icon-circle">
-                        <img src="car.svg" alt="Automotive">
-                    </div>
-                    <h3 class="card-title">Automotive</h3>
-                    <p class="card-content">Secure and efficient transportation for automotive parts and components.</p>
+                <h3 class="card-title">E-commerce</h3>
+                <p class="card-content">Fast, flexible delivery that keeps your customers smiling and your stock moving.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon-circle">
+                    <img src="car.svg" alt="Automotive">
                 </div>
-    
-                <div class="card">
-                    <div class="icon-circle">
-                        <img src="first-air-kit.svg" alt="Healthcare">
-                    </div>
-                    <h3 class="card-title">Healthcare</h3>
-                    <p class="card-content">Safe and timely deliveries of sensitive medical equipment and pharmaceuticals.</p>
+                <h3 class="card-title">Automotive</h3>
+                <p class="card-content">Secure and efficient transportation for automotive parts and components.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon-circle">
+                    <img src="first-air-kit.svg" alt="Healthcare">
                 </div>
-    
-                <div class="card">
-                    <div class="icon-circle">
-                        <img src="settings-02.svg" alt="Manufacturing">
-                    </div>
-                    <h3 class="card-title">Manufacturing & More</h3>
-                    <p class="card-content">End-to-end logistics for the transportation of raw materials and finished products.</p>
+                <h3 class="card-title">Healthcare</h3>
+                <p class="card-content">Safe and timely deliveries of sensitive medical equipment and pharmaceuticals.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon-circle">
+                    <img src="settings-02.svg" alt="Manufacturing">
                 </div>
+                <h3 class="card-title">Manufacturing & More</h3>
+                <p class="card-content">End-to-end logistics for the transportation of raw materials and finished products.</p>
             </div>
         </div>
-    </section>
-    
+    </div>
+</section>
 
-
-    <section class="trusted-partner">
-        <div class="container trust-container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 t-grey-box-column">
-                    <div class="trust-grey-box">
-                        <img src="trusted_img.jpg" alt="" class="trusted-image">
-                    </div>
-                </div>
-                
-                <div class="col-lg-6 t-content-column">
-                    <h2 class="trusted-heading">
-                        <span class="heading">Your trusted</span>
-                        <span class="heading">partner,</span>
-                        <span class="heading">Anywhere in</span>
-                        <span class="heading">the world</span>
-                    </h2>
-                    <p class="trusted-text">
-                        We don’t just move products — we move toward a greener future. Our eco-friendly solutions help reduce
-                        your carbon footprint with optimized routes, energy-efficient vehicles, and sustainable warehousing.
-                        Better for the planet, better for your brand.
-                    </p>
+<!-- trusted section -->
+<section class="trusted-partner">
+    <div class="container trust-container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 t-grey-box-column">
+                <div class="trust-grey-box">
+                    <img src="trusted_img.jpg" alt="" class="trusted-image">
                 </div>
             </div>
+            
+            <div class="col-lg-6 t-content-column">
+                <h2 class="trusted-heading">
+                    <span class="heading">Your trusted</span>
+                    <span class="heading">partner,</span>
+                    <span class="heading">Anywhere in</span>
+                    <span class="heading">the world</span>
+                </h2>
+                <p class="trusted-text">
+                    We don’t just move products — we move toward a greener future. Our eco-friendly solutions help reduce
+                    your carbon footprint with optimized routes, energy-efficient vehicles, and sustainable warehousing.
+                    Better for the planet, better for your brand.
+                </p>
+            </div>
         </div>
-    </section>    
-    
-    
+    </div>
+</section>    
+
 <!-- 8. FAQ Section -->
 <section class="faq-section">
     <div class="container faq-container">
@@ -516,8 +507,6 @@
         </div>
     </div>
 </section>
-
-
 
 <!-- 9. Footer -->
 <footer class="footer">
@@ -586,6 +575,5 @@
         </div>
     </div>
 </footer>   
-     
 </body>
 </html>
