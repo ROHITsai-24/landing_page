@@ -29,162 +29,13 @@ max-width: 100%;
 
 
 
-/* Tabbed Input Section */
-.tabbed-input-section {
-    position: relative;
-    background: var(--white);
-    border-radius: 24px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 40px;
-    margin: 0 auto;
-    max-width: 1200px;
-    margin: -150px auto 0;
-
-    .tab-nav {
-        display: flex;
-        background: var(--background-color);
-        border-radius: 60px;
-        padding: 10px;
-        justify-content: flex-start;
-        gap: 10px;
-    }
-
-    .tab {
-        background: var(--white);
-        border-radius: 60px;
-        padding: 10px 20px;
-        border: none;
-
-        &.active {
-            background: var(--tab-background-color);
-        }
-    }
-
-    .input-tab {
-        display: flex;
-        gap: 15px;
-        margin-top: 20px;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-
-    .input-wrapper {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        min-width: 150px;
-    }
-
-    .input-icon-container {
-        display: flex;
-        align-items: center;
-        border: 1px solid var(--tab-background-color);
-        border-radius: 8px;
-        padding: 10px;
-        font-size: 14px;
-        background: var(--white);
-        width: 100%;
-
-        input {
-            flex-grow: 1;
-            border: none;
-            outline: none;
-            font-size: 14px;
-            padding: 5px;
-            background: transparent;
-            min-width: 100px;
-            height: 20px;
-        }
-
-        .icon {
-            margin-right: 10px;
-        }
-
-        .unit {
-            margin-left: 10px;
-            color: #666;
-            white-space: nowrap;
-        }
-    }
-
-    .weight {
-        flex: 1.5;
-    }
-
-    .hidden-label {
-        visibility: hidden;
-    }
-
-    .search-btn {
-        background-color: #d96500;
-        color: var(--white);
-        padding: 10px 20px;
-        border-radius: 8px;
-        border: none;
-        cursor: pointer;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-width: 120px;
-
-        &:hover {
-            background-color: #f57600;
-        }
-    }
-
-    .bttn {
-        max-width: 80px;
-    }
-
-    .input-icon-container:focus-within {
-        border-color: #86b7fe !important;
-        box-shadow: 0 0 6px rgba(0, 123, 255, 0.5);
-        transition: all 0.3s ease-in-out;
-    }
-}
-
-/* Override Bootstrap Tab Styles */
-.nav-tabs {
-    border: none !important;
-
-    .nav-item.show .nav-link, 
-    .nav-link.active {
-        background-color: #EAEAEA !important;
-        border: none !important;
-        color: var(--black) !important;
-    }
-
-    .nav-link {
-        border-radius: 60px !important;
-        background-color: var(--white) !important;
-        color: var(--black) !important;
-        border: none !important;
-
-        &:hover {
-            color: var(--black) !important;
-        }
-
-        &:focus, 
-        &:active {
-            box-shadow: none !important;
-        }
-    }
-}
-
-.navbar {
-    background-color: transparent !important;
-    box-shadow: none !important;
-}
-
-
 /* hero section */
 
 .navbar {
     position: absolute;
     top: 0;
     width: 100%;
-    background: var(--grey) !important;
+    background-color: var(--grey) !important;
     padding: 20px 30px;
     z-index: 100;
 
@@ -308,16 +159,178 @@ max-width: 100%;
         }
     }
 }
-@media (max-width: 768px) {
+
+
+
+/* Tabbed Input Section */
 .tabbed-input-section {
-    width: 90%;
-    max-width: 100%;
-    padding: 20px;
-    margin: -100px auto 0;
+    position: relative;
+    background: var(--white);
+    border-radius: 24px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 1200px;
+    margin: -150px auto 0;
+
+    .tab-nav {
+        display: flex;
+        background: var(--background-color);
+        border-radius: 60px;
+        padding: 10px;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .tab {
+        background: var(--white);
+        border-radius: 60px;
+        padding: 10px 20px;
+        border: none;
+
+        &.active {
+            background: var(--tab-background-color);
+        }
+    }
+
+    .input-tab {
+        display: flex;
+        gap: 15px;
+        margin-top: 20px;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .input-wrapper {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        min-width: 150px;
+    }
+
+    .input-icon-container {
+        display: flex;
+        align-items: center;
+        border: 1px solid var(--tab-background-color);
+        border-radius: 8px;
+        padding: 10px;
+        font-size: 14px;
+        background: var(--white);
+        width: 100%;
+
+        input {
+            flex-grow: 1;
+            border: none;
+            outline: none;
+            font-size: 14px;
+            padding: 5px;
+            background: transparent;
+            min-width: 100px;
+            height: 20px;
+        }
+
+        .icon {
+            margin-right: 10px;
+        }
+
+        .unit {
+            margin-left: 10px;
+            color: #666;
+            white-space: nowrap;
+        }
+    }
+
+    .weight {
+        flex: 1.5;
+    }
+
+    .hidden-label {
+        visibility: hidden;
+    }
+
+    .search-btn {
+        background-color: #d96500;
+        color: var(--white);
+        padding: 10px 20px;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 120px;
+
+        &:hover {
+            background-color: #f57600;
+        }
+    }
+
+    .bttn {
+        max-width: 80px;
+    }
+
+    .input-icon-container:focus-within {
+        border-color: #86b7fe !important;
+        box-shadow: 0 0 6px rgba(0, 123, 255, 0.5);
+        transition: all 0.3s ease-in-out;
+    }
+
+    @media (max-width: 768px) {
+            width: 90%;
+            max-width: 100%;
+            padding: 10px;
+            margin: -100px auto 0;
+        }
+
+@media (max-width: 425px) {
+    .tab-content {
+        max-height: 400px; 
+        overflow-y: auto; 
+        padding-right: 4px; 
+        padding-left: 6px; 
+    }
+
+    .tab-content::-webkit-scrollbar {
+        width: 3px; 
+    }
+
+    .tab-content::-webkit-scrollbar-thumb {
+        background: #A0A0A0;
+        border-radius: 10px;
+    }
 }
+
 }
 
 
+/* Override Bootstrap Tab Styles */
+.nav-tabs {
+    border: none !important;
+
+    .nav-item.show .nav-link, 
+    .nav-link.active {
+        background-color: #EAEAEA !important;
+        border: none !important;
+        color: var(--black) !important;
+    }
+
+    .nav-link {
+        border-radius: 60px !important;
+        background-color: var(--white) !important;
+        color: var(--black) !important;
+        border: none !important;
+
+        &:hover {
+            color: var(--black) !important;
+        }
+
+        &:focus, 
+        &:active {
+            box-shadow: none !important;
+        }
+    }
+}
 
 /* logistic section */
 .logistic-partner {
