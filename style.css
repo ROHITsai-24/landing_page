@@ -731,10 +731,7 @@ max-width: 100%;
         line-height: 1.2;
         text-align: left;
         margin-bottom: 25px;
-
-        .heading {
-            display: block;
-        }
+        max-width: 500px; 
     }
 
     .eco-text {
@@ -766,6 +763,7 @@ max-width: 100%;
             width: 90%;
             margin-bottom: 15px;
             font-weight: normal;
+            max-width: 300px;
         }
 
         .eco-text {
@@ -954,10 +952,7 @@ max-width: 100%;
         line-height: 1.2;
         text-align: left;
         margin-bottom: 25px;
-        
-        .heading {
-            display: inline-block;
-        }
+        max-width:500px
     }
 
     .trusted-text {
@@ -991,10 +986,7 @@ max-width: 100%;
             width: 90%;
             margin-bottom: 15px;
             font-weight: normal;
-        }
-
-        .trusted-heading .heading {
-            display: block;
+            max-width: 300px;
         }
 
         .trusted-text {
