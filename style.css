@@ -13,19 +13,16 @@
     --footer-border: #5A636F;
     --tab-background-color: #E4E4E4;
     --font-heading: 'Anton', sans-serif;
+    --bs-body-font-family : 'Inter', sans-serif;
 }
 
 body {
-    font-family: 'Inter', sans-serif;
     background-color: var(--background-color)
 }
 .section {
     padding: 60px 0;
 }
-html, body {
-overflow-x: hidden;
-max-width: 100%;
-}
+
 
 
 
@@ -1179,7 +1176,13 @@ max-width: 100%;
         position: relative;
         left: 80px;
         cursor: pointer;
+    
+        ul {
+            padding-left: 0 !important;
+            margin-left: 0 !important;
+        }
     }
+    
 
     .c-text-muted {
         color: var(--mid-grey);
@@ -1265,11 +1268,7 @@ max-width: 100%;
         }
 
         .navigation-column {
-            margin-left: -25px;
-        }
-
-        .aboutus-column {
-            margin-left: 35px;
+            margin-left: -78px;
         }
 
         .text-weight {
