@@ -285,7 +285,7 @@ max-width: 100%;
 
 @media (max-width: 425px) {
     .tab-content {
-        max-height: 400px; 
+        max-height: 275px; 
         overflow-y: auto; 
         padding-right: 4px; 
         padding-left: 6px; 
@@ -1160,10 +1160,6 @@ max-width: 100%;
     padding: 50px 30px 25px;
     max-width: 1300px;
     margin: 0 auto 20px;
-
-    .foot-container {
-        padding: 20px;
-    }
 
     .c-border-bottom {
         border-bottom: 1px solid var(--footer-border);
